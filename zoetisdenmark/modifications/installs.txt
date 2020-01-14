@@ -1,0 +1,38 @@
+
+
+Galaxy eGTouch driver and utilities:
+    eGTouch_v2.5.7413.L-x.zip: 
+
+Packages:
+    libasound2 (needed by eGTouch calibration tool)
+    linux-modules-extra-5.0.0-23-generic (needed to get i915 graphics driver supporting xrandr rotation)
+    dbus-x11
+
+
+
+libpng12.so.0 copied from 12.04: to /usr/lib/i386-linux-gnu/libpng12.so.0
+
+
+dpkg --purge nodm
+
+
+Added systemd scripts
+
+
+To make the root file system read-writable the method described in the document 
+describing the 12.04 image is for some reason not working on 18.04
+
+# mount -o remount,rw /mnt/root-ro
+# touch /mnt/root-ro/disable-root-ro
+# reboot
+
+The following must be added before reboot
+
+# cp /mnt/root-ro/etc/fstab.rw /mnt/root-ro/etc/fstab 
+
+And vice versa when going back
+
+# rm /disable-root-ro
+# cp /etc/fstab.ro /etc/fstab
+
+

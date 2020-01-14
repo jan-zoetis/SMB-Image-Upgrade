@@ -1,0 +1,2 @@
+/dev/sda1 /mnt/boot ext4 ro,noauto 	0	1
+/dev/sda4 /home/smb ext4 defaults 	0	1

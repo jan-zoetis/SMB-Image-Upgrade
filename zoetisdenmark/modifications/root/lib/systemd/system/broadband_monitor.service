@@ -1,0 +1,13 @@
+[Unit]
+Description=Broadband Internet Connection Monitor
+After=broadband.service
+
+[Service]
+Type=simple
+WorkingDirectory=/tmp
+ExecStart=/home/ipmgw/bin/bb_monitor.py
+
+[Install]
+WantedBy=multi-user.target
+
+

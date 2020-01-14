@@ -1,0 +1,16 @@
+[Unit]
+Description=Broadband Internet Connection
+After=NetworkManager.service
+
+[Service]
+Type=simple
+WorkingDirectory=/tmp
+ExecStart=/usr/bin/nmcli conn up id 'TDC Default'
+RemainAfterExit=no
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+
+

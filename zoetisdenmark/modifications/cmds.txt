@@ -1,0 +1,1000 @@
+ 1686  git log -p -2
+ 1687  git log --stat
+ 1688  git log --pretty=oneline
+ 1689  git log --oneline
+ 1690  git log --pretty=format:"%h %s" --graph
+ 1691  git log --since "yesterday"
+ 1692  git log --since "5 days"
+ 1693  ls -la /boot
+ 1694  uname -r
+ 1695  view /boot/config-5.0.0-36-generic
+ 1696  lsmod
+ 1697  lsmod | less
+ 1698  uname -r
+ 1699  ls /boot/
+ 1700  ls -lrt /boot/
+ 1701  uname -r
+ 1702  vi /boot/grub/grub.cfg
+ 1703  cd
+ 1704  cd Downloads/
+ 1705  ls
+ 1706  ls -lrt
+ 1707  cd
+ 1708  ls -lrt
+ 1709  cd gittest/
+ 1710  ls
+ 1711  cd simplegit-progit/
+ 1712  gitk
+ 1713  sudo bash
+ 1714  gitk
+ 1715  git remote -v
+ 1716  git remote
+ 1717  git remote show origin
+ 1718  git tag
+ 1719  ssh borris@10.0.20.68
+ 1720  ls
+ 1721  vi calib.txt
+ 1722  scp smb@10.0.20.169:screen.xwd .
+ 1723  display screen.xwd 
+ 1724  xwud screen.xwd 
+ 1725  xwud -in screen.xwd 
+ 1726  bg
+ 1727  cat calib.txt 
+ 1728  pwd
+ 1729  cd xconfig/
+ 1730  ls
+ 1731  cd Abaxis/
+ 1732  ls
+ 1733  cat .xinitrc
+ 1734  cd ..
+ 1735  ls
+ 1736  cd ..
+ 1737  xwud -in screen.xwd  &
+ 1738  cd xconfig/Abaxis/
+ 1739  ls
+ 1740  ls -la
+ 1741  xwud -in ../../screen.xwd  &
+ 1742  cat .xinitrc
+ 1743  ls
+ 1744  vi xorg.conf 
+ 1745  xwud -in ../../screen.xwd  &
+ 1746  pwd
+ 1747  ls
+ 1748  ls -la
+ 1749  vi .xinitrc
+ 1750  uname -r
+ 1751  cat /etc/issue
+ 1752  ls /usr/share/plymouth/themes
+ 1753  ls
+ 1754  cat default.grub
+ 1755  ls
+ 1756  cd /usr/share/plymouth/themes/
+ 1757  ls
+ 1758  cat default.
+ 1759  cat default.grub
+ 1760  cat default.plymouth 
+ 1761  ls
+ 1762  cd ubuntu-logo
+ 1763  ls
+ 1764  cat ubuntu-logo.grub
+ 1765  cd
+ 1766  ls
+ 1767  cd gittest
+ 1768  ls
+ 1769  mkdir test1
+ 1770  cd test1
+ 1771  git init
+ 1772  vi README
+ 1773  mkdir dir1
+ 1774  cd dir1
+ 1775  vi file-1.txt
+ 1776  git add file-1.txt 
+ 1777  git status
+ 1778  cd ..
+ 1779  git status
+ 1780  ls
+ 1781  cd dir1
+ 1782  ls
+ 1783  vi file-2.txt
+ 1784  git status
+ 1785  cd ..
+ 1786  git add dir1
+ 1787  git status
+ 1788  cd
+ 1789  ls
+ 1790  cd xconfig
+ 1791  ls
+ 1792  cd Abaxis/
+ 1793  ls -lrt
+ 1794  ls -la
+ 1795  ifconfig
+ 1796  scp .xinitrc borris@10.0.20.68:~/edgar/build_script/local.Abaxis/home/smb
+ 1797  scp xorg.conf  borris@10.0.20.68:~/edgar/build_script/local.Abaxis/home/smb
+ 1798  cd
+ 1799  cd images
+ 1800  ls
+ 1801  ls -lrt
+ 1802  scp borris@10.0.20.68:~/edgar/build_script/card.img.Abaxis .
+ 1803  ls -lrt
+ 1804  sudo bash
+ 1805  scp borris@10.0.20.68:~/edgar/build_script/card.img.Abaxis .
+ 1806  mount
+ 1807  umount /dev/sdb4 /dev/sdb3 /dev/sdb2 /dev/sdb1
+ 1808  ls -lrt
+ 1809  dd if=card.img.Abaxis of=/dev/sdb bs=1M
+ 1810  cd
+ 1811  cd Downloads/
+ 1812  ls
+ 1813  ls -lrt
+ 1814  rm hiper-november.pdf Regning_610577248194.pdf
+ 1815  ls -lrt
+ 1816  pwd
+ 1817  ls
+ 1818  cd
+ 1819  ls
+ 1820  cd Desktop
+ 1821  ls
+ 1822  cd ..
+ 1823  ls
+ 1824  reboot
+ 1825  docker ps
+ 1826  docker ps -auxww
+ 1827  docker ps -a
+ 1828  docker rm 07f2e96c71bb
+ 1829  docker ps -a
+ 1830  docker rm 74f876a9a344
+ 1831  docker ps -a
+ 1832  docker images
+ 1833  docker pull ubuntu-12.04
+ 1834  docker pull ubuntu:12.04
+ 1835  docker images
+ 1836  apt-cache search dosbox
+ 1837  man docker
+ 1838  man docker ls
+ 1839  man docker
+ 1840  docker ps
+ 1841  docker pull ubuntu:12.04
+ 1842  docker ps
+ 1843  docker list
+ 1844  docker -it ubuntu:12.04
+ 1845  docker run -it ubuntu:12.04
+ 1846  ps
+ 1847  ps auxww | less
+ 1848  docker run -it ubuntu:12.04
+ 1849  ls
+ 1850  docker ps
+ 1851  history
+ 1852  docker run -it ubuntu:12.04
+ 1853  docker images
+ 1854  man docker build
+ 1855  man docker-build
+ 1856  man docker-ps
+ 1857  docker ps
+ 1858  docker images
+ 1859  docker run -it ubuntu:12.04
+ 1860  docker version
+ 1861  history | grep ssh
+ 1862  ssh root@10.0.20.169
+ 1863  ssh-keygen -f "/root/.ssh/known_hosts" -R "10.0.20.169"
+ 1864  ssh root@10.0.20.169
+ 1865  mount
+ 1866  umount /dev/sdb
+ 1867  umount /dev/sdb1 /dev/sdb2 /dev/sdb3 /dev/sdb4
+ 1868  mount
+ 1869  man dd
+ 1870  mount
+ 1871  ssh root@10.0.20.169
+ 1872  ssh-keygen -f "/root/.ssh/known_hosts" -R "10.0.20.169"
+ 1873  ssh root@10.0.20.169
+ 1874  apt-get install gnome-tweaks
+ 1875  ping vspronew.local
+ 1876  ping local.AB9998
+ 1877  ping AB9998.local
+ 1878  df -h
+ 1879  man xinput
+ 1880  man xorg
+ 1881  cd build-jan/build_script/
+ 1882  ls local.bootloader/
+ 1883  ls local.bootloader/mnt
+ 1884  ls local.bootloader/mnt/boot
+ 1885  ls local.bootloader/mnt/boot/grup
+ 1886  ls local.bootloader/mnt/boot/grub
+ 1887  cat  local.bootloader/mnt/boot/grub/grub.cfg
+ 1888  cd
+ 1889  cd linux/
+ 1890  ls
+ 1891  vi script.bash 
+ 1892  man mount
+ 1893  ssh borris@10.1.20.68
+ 1894  ssh borris@10.0.20.68
+ 1895  cd
+ 1896  ssh borris@10.0.20.68
+ 1897  ssh -X borris@10.0.20.68
+ 1898  pwd
+ 1899  ls
+ 1900  ssh -X borris@10.0.20.68
+ 1901  ssh root@10.0.20.124
+ 1902  pwd
+ 1903  ls -l
+ 1904  cd images
+ 1905  ls
+ 1906  pwd
+ 1907  cd ..
+ 1908  ls
+ 1909  cat calib.txt 
+ 1910  mkdir xconfig
+ 1911  cd xconfig
+ 1912  ls
+ 1913  ssh smb@10.0.20.169
+ 1914  scp smb@10.0.20.169:.xinitrc .
+ 1915  scp smb@10.0.20.169:xorg.conf .
+ 1916  ls -l
+ 1917  ls -la
+ 1918  ssh smb@10.0.20.169
+ 1919  ls -l
+ 1920  cd ..
+ 1921  ls
+ 1922  cd xconfig
+ 1923  ls
+ 1924  mkdir Abaxis
+ 1925  mv xorg.conf Abaxis/
+ 1926  mv .xinitrc Abaxis/
+ 1927  ls 
+ 1928  cd Abaxis/
+ 1929  ls -la
+ 1930  ssh smb@10.0.20.169
+ 1931  ssh-keygen -f "/home/hellem03/.ssh/known_hosts" -R "10.0.20.169"
+ 1932  ssh smb@10.0.20.169
+ 1933  ssh root@10.0.20.169
+ 1934  ls -l
+ 1935  scp .xinitrc smb@10.0.20.169:
+ 1936  cp xorg.conf smb@10.0.20.169:
+ 1937  ls 
+ 1938  rm smb@10.0.20.169:
+ 1939  scp xorg.conf smb@10.0.20.169:
+ 1940  ssh root@10.0.20.169
+ 1941  xclock
+ 1942  xcalc
+ 1943  man xwininfo
+ 1944  ssh root@10.0.20.169
+ 1945  ssh smb@10.0.20.169
+ 1946  vmwarectrl 
+ 1947  virtualbox 
+ 1948  bg
+ 1949  jobs
+ 1950  virtualbox &
+ 1951  dmesg
+ 1952  lsusb
+ 1953  dmesg
+ 1954  mount
+ 1955  dmesg
+ 1956  df /media/hellem03/123dfc5d-523f-434c-847b-1b0f776a16ca
+ 1957  cd /media/hellem03/
+ 1958  ls
+ 1959  cd
+ 1960  ls /dev
+ 1961  file /dev/loop1
+ 1962  man losetup
+ 1963  losetup -a
+ 1964  losetup -d /home/hellem03/build-jan/build_script/vspro.img
+ 1965  losetup -d /dev/loop21
+ 1966  sudo bash
+ 1967  ssh root@10.0.20.169
+ 1968  sudo bash
+ 1969  ssh root@10.0.20.169
+ 1970  mount
+ 1971  ssh root@10.0.20.169
+ 1972  vi /home/hellem03/.ssh/known_hosts
+ 1973  ssh-keygen -f "/home/hellem03/.ssh/known_hosts" -R "10.0.20.169"
+ 1974  ssh root@10.0.20.169
+ 1975  ssh smb@10.0.20.169
+ 1976  mount
+ 1977  ls /media/hellem03/OS
+ 1978  mount
+ 1979  clear
+ 1980  mount
+ 1981  apt-cache search docker | less
+ 1982  apt-cache search docker.io
+ 1983  apt-cache search docker | less
+ 1984  df
+ 1985  sudo bash
+ 1986  docker run hello-world
+ 1987  which busybox
+ 1988  docker run  busybox
+ 1989  sudo bash
+ 1990  docker run  busybox
+ 1991  sudo bash
+ 1992  cd Downloads/
+ 1993  ls -lrt
+ 1994  mv 5016821.pdf hiper-november.pdf
+ 1995  ls -lrt
+ 1996  virtualbox &
+ 1997  ps auxww | grep virtualbox
+ 1998  killall firefox
+ 1999  exit
+ 2000  scp borris@10.0.20.236:~/edgar/build_script/card.img.Abaxis.Bionic .
+ 2001  mount
+ 2002  umount /dev/sdb4 /dev/sdb2 /dev/sdb3 /dev/sdb1
+ 2003  mount
+ 2004  ls -lrt
+ 2005  dd if=card.img.Abaxis.Bionic of=/dev/sdb bs=1M
+ 2006  history | grep scp
+ 2007  scp borris@10.0.20.236:~/edgar/build_script/card.img.Abaxis.Bionic .
+ 2008  mount
+ 2009  umount /dev/sdb1 /dev/sdb2 /dev/sdb3
+ 2010  man dd
+ 2011  ls
+ 2012  time dd if=card.img.Abaxis.Bionic of=/dev/sdb bs=1M status=progress
+ 2013  mount
+ 2014  df -h
+ 2015  umount /dev/sdb1 /dev/sdb3 /dev/sdb2
+ 2016  mount
+ 2017  cd /media/hellem03/78af140f-605c-46a2-a92d-ede2ddf3c098
+ 2018  ls
+ 2019  cd grub
+ 2020  ls
+ 2021  vi grub.cfg
+ 2022  cd ..
+ 2023  ls
+ 2024  cd ..
+ 2025  ls
+ 2026  mount
+ 2027  cd /media/hellem03/daad68d2-7bad-4d2b-a938-58749a1a1677
+ 2028  ls
+ 2029  cd boot
+ 2030  ls
+ 2031  cat linux.cfg 
+ 2032  ls 
+ 2033  ls grub
+ 2034  cd
+ 2035  mount
+ 2036  umount /dev/sdb1 /dev/sdb3 /dev/sdb2
+ 2037  mount
+ 2038  cd /media/hellem03/78af140f-605c-46a2-a92d-ede2ddf3c098
+ 2039  ls
+ 2040  cd grub
+ 2041  ls
+ 2042  cd i386-pc/
+ 2043  ls
+ 2044  cat grub.cfg
+ 2045  cd ..
+ 2046  ls
+ 2047  cat grub.cfg
+ 2048  vi grub.cfg
+ 2049  ls
+ 2050  vi grub.cfg
+ 2051  ls
+ 2052  cat device.map
+ 2053  cd grubenv
+ 2054  cat grubenv
+ 2055  ls
+ 2056  cd locale
+ 2057  ls
+ 2058  cd ..
+ 2059  ls
+ 2060  cd i386-pc/
+ 2061  ls
+ 2062  pwd
+ 2063  cd ..
+ 2064  ls
+ 2065  vi grub.cfg
+ 2066  mount
+ 2067  cd /media/hellem03/daad68d2-7bad-4d2b-a938-58749a1a1677
+ 2068  ls
+ 2069  cd /media/hellem03/1e3c7a10-fa84-4605-8ffb-8a7fea1f22e7
+ 2070  ls
+ 2071  cd /media/hellem03/78af140f-605c-46a2-a92d-ede2ddf3c098
+ 2072  ls
+ 2073  cd /media/hellem03/daad68d2-7bad-4d2b-a938-58749a1a1677
+ 2074  ls
+ 2075  cd /media/hellem03/1e3c7a10-fa84-4605-8ffb-8a7fea1f22e7
+ 2076  ls
+ 2077  cd /media/hellem03/78af140f-605c-46a2-a92d-ede2ddf3c098
+ 2078  ls
+ 2079  cd /media/hellem03/daad68d2-7bad-4d2b-a938-58749a1a1677
+ 2080  ls
+ 2081  cd /media/hellem03/1e3c7a10-fa84-4605-8ffb-8a7fea1f22e7
+ 2082  ls
+ 2083  cd
+ 2084  ls
+ 2085  uname -r
+ 2086  pwd
+ 2087  cd images/
+ 2088  ls -lrt
+ 2089  history | grep scp
+ 2090  scp borris@10.0.20.236:~/edgar/build_script/card.img.Abaxis.Bionic .
+ 2091  history | grep dd
+ 2092  ls -lrt
+ 2093  time dd if=card.img.Abaxis.Bionic of=/dev/sdb bs=1M status=progress
+ 2094  mount
+ 2095  cd /media/hellem03/78af140f-605c-46a2-a92d-ede2ddf3c098
+ 2096  ls
+ 2097  cd /media/hellem03/daad68d2-7bad-4d2b-a938-58749a1a1677
+ 2098  ls
+ 2099  cd /media/hellem03/1e3c7a10-fa84-4605-8ffb-8a7fea1f22e7
+ 2100  ls
+ 2101  mount
+ 2102  mount | grep /dev/sdb3
+ 2103  mount | grep /dev/sdb4
+ 2104  mount
+ 2105  cd
+ 2106  mount
+ 2107  cd /media/hellem03/1e3c7a10-fa84-4605-8ffb-8a7fea1f22e7
+ 2108  ls
+ 2109  cd ..
+ 2110  mount
+ 2111  df -h
+ 2112  ls /media/hellem03/1e3c7a10-fa84-4605-8ffb-8a7fea1f22e7
+ 2113  ls /media/hellem03/78af140f-605c-46a2-a92d-ede2ddf3c098
+ 2114  ls /media/hellem03/daad68d2-7bad-4d2b-a938-58749a1a1677
+ 2115  fdisk -l /dev/sdb
+ 2116  mount
+ 2117  fdisk -l /dev/sdb
+ 2118  mount /dev/sdb4 /media/hellem03/jb
+ 2119  mkdir /media/hellem03/jb
+ 2120  mount /dev/sdb4 /media/hellem03/jb
+ 2121  fsck /dev/sdb3
+ 2122  fsck /dev/sdb4
+ 2123  man fsck
+ 2124  gparted /dev/sdb4
+ 2125  apt-get install gparted
+ 2126  gparted /dev/sdb4
+ 2127  fdisk -l /dev/sdb4
+ 2128  fdisk -l /dev/sdb
+ 2129  fsck /dev/sdb4
+ 2130  mount
+ 2131  umount /dev/sdb1 /dev/sdb3 /dev/sdb2
+ 2132  cd ima
+ 2133  cd
+ 2134  cd images
+ 2135  history | grep scp
+ 2136  scp borris@10.0.20.236:~/edgar/build_script/card.img.Abaxis.Bionic .
+ 2137  history | grep dd
+ 2138  time dd if=card.img.Abaxis.Bionic of=/dev/sdb bs=1M status=progress
+ 2139  mount
+ 2140  ls /media/hellem03/6f807ad6-3863-49d6-b08d-72ab2c2b688e
+ 2141  ls /media/hellem03/54dd350e-2e2c-464f-bad7-3ea7881ad9e4
+ 2142  ls /media/hellem03/c3194d98-a381-4fa2-8094-be71cddb4038
+ 2143  mount
+ 2144  umount /dev/sdb1 /dev/sdb2 /dev/sdb4
+ 2145  history
+ 2146  ls -lrt
+ 2147  mount
+ 2148  fdisk -l /dev/sdb
+ 2149  mount
+ 2150  umount  /dev/sdb1 /dev/sdb2 /dev/sdb4
+ 2151  fsck /dev/sdb1
+ 2152  fsck /dev/sdb2
+ 2153  fcsk /dev/sdb4
+ 2154  fsck /dev/sdb4
+ 2155  ls /media
+ 2156  ls /media/hellem03/
+ 2157  rm /media/hellem03/jb
+ 2158  rmdir /media/hellem03/jb
+ 2159  mkdir /media/hellem03/boot /media/hellem03/root /media/hellem03/user
+ 2160  mount /dev/sdb1 /media/hellem03/boot
+ 2161  mount /dev/sdb2 /media/hellem03/root
+ 2162  mount /dev/sdb3 /media/hellem03/user
+ 2163  df -h
+ 2164  mount
+ 2165  fsck /dev/sdb3
+ 2166  mount
+ 2167  umount /dev/sdb1 /dev/sdb2
+ 2168  mount
+ 2169  ls /media/hellem03/c3194d98-a381-4fa2-8094-be71cddb4038
+ 2170  ls /media/hellem03/54dd350e-2e2c-464f-bad7-3ea7881ad9e4
+ 2171  ls /media/hellem03/6f807ad6-3863-49d6-b08d-72ab2c2b688e
+ 2172  cd /media/hellem03/6f807ad6-3863-49d6-b08d-72ab2c2b688e
+ 2173  ls
+ 2174  cd grub
+ 2175  ls
+ 2176  vi grub.cfg
+ 2177  cat device.map 
+ 2178  cd
+ 2179  mount
+ 2180  umount  /dev/sdc1 /dev/sdc4 /dev/sdc2
+ 2181  fsck /dev/sdc1
+ 2182  fsck /dev/sdc2
+ 2183  fsck /dev/sdc4
+ 2184  fdisk -l /dev/sdc
+ 2185  fsck /dev/sdc3
+ 2186  fsck /dev/sdc1
+ 2187  gparted /dev/sdc1
+ 2188  gparted /dev/sdc
+ 2189  mount
+ 2190  pwd
+ 2191  cd images/
+ 2192  ls
+ 2193  history | grep scp
+ 2194  ls
+ 2195  ls -lrt
+ 2196  rm card.img.Abaxis.Bionic
+ 2197  scp borris@10.0.20.236:~/edgar/build_script/card.img.Abaxis.Bionic .
+ 2198  history | grep dd
+ 2199  time dd if=card.img.Abaxis.Bionic of=/dev/sdb bs=1M status=progress
+ 2200  ls /dev/sdb
+ 2201  file /dev/sdb
+ 2202  rm /dev/sdb
+ 2203  mount
+ 2204  umount /dev/sdb1 /dev/sdb2 /dev/sdb4
+ 2205  time dd if=card.img.Abaxis.Bionic of=/dev/sdb bs=1M status=progress
+ 2206  mount
+ 2207  ls -lrt
+ 2208  fdisk -l card.img.Abaxis.Bionic
+ 2209  mount
+ 2210  fdisk -l /dev/sdb
+ 2211  fsck /dev/sdb3
+ 2212  fsck /dev/sdb4
+ 2213  mount
+ 2214  umount /dev/sdb1 /dev/sdb3
+ 2215  umount /dev/sdb1 /dev/sdb2
+ 2216  mount
+ 2217  ls -lrt
+ 2218  mount
+ 2219  ls /media/hellem03/a69390c3-c278-4c4f-a049-e37739c73301
+ 2220  ls /media/hellem03/4bb4c09d-5a85-4720-8c75-0849fab70da5
+ 2221  ls /media/hellem03/e6d41ce7-500a-4efb-80af-1e9c469ce354
+ 2222  ls /media/hellem03/b8191343-20b8-41a7-8233-0acc30866272
+ 2223  fdisk -l /dev/sdb
+ 2224  ls -lrt
+ 2225  fdisk -l vspro.img
+ 2226  fdisk -l card.img.Abaxis.Bionic
+ 2227  mount
+ 2228  fdisk -l /dev/sdb
+ 2229  mount
+ 2230  umount /dev/sdb1 /dev/sdb2 /dev/sdb3 /dev/sdb4
+ 2231  ls -lrt
+ 2232  rm card.img.Abaxis.Bionic
+ 2233  scp borris@10.0.20.236:~/edgar/build_script/card.img.Abaxis.Bionic .
+ 2234  mount
+ 2235  umount /media/hellem03/6f807ad6-3863-49d6-b08d-72ab2c2b688e /media/hellem03/54dd350e-2e2c-464f-bad7-3ea7881ad9e4
+ 2236  history | grep time
+ 2237  time dd if=card.img.Abaxis.Bionic of=/dev/sdb bs=1M status=progress
+ 2238  ls -lrt
+ 2239  fdisk -l card.img.Abaxis.Bionic
+ 2240  mount
+ 2241  find /media/hellem03/3d407edf-2963-43e7-8f60-b7f8fddbfff3 -name load.cfg
+ 2242  vi /media/hellem03/3d407edf-2963-43e7-8f60-b7f8fddbfff3/grub/i386-pc/load.cfg
+ 2243  mount
+ 2244  ls /media/hellem03/7f3566c4-946c-442c-8027-99aa8b75f5a4
+ 2245  ls /media/hellem03/0dec0e4a-046b-4f76-9efc-91a283bfa860
+ 2246  umount /dev/sdb1  /dev/sdb3 /dev/sdb2
+ 2247  mount
+ 2248  fdisk -l /dev/sdb
+ 2249  ls
+ 2250  fsck /dev/sdb4
+ 2251  mount
+ 2252  umount /dev/sdb2 /dev/sdb3 /dev/sdb1
+ 2253  mount
+ 2254  dmesg
+ 2255  mount
+ 2256  dmesg
+ 2257  time dd if=card.img.Abaxis.Bionic of=/dev/sdb bs=1M status=progress
+ 2258  dmesg
+ 2259  time dd if=card.img.Abaxis.Bionic of=/dev/sdb bs=1M status=progress
+ 2260  dmesg
+ 2261  mount
+ 2262  ls /media/hellem03/c681a9be-68f3-4962-b112-61aab4dcf085
+ 2263  time dd if=card.img.Abaxis.Bionic of=/dev/sdb bs=1M status=progress
+ 2264  mount
+ 2265  umount /media/hellem03/3d407edf-2963-43e7-8f60-b7f8fddbfff3
+ 2266  time dd if=card.img.Abaxis.Bionic of=/dev/sdb bs=1M status=progress
+ 2267  mount
+ 2268  ls /media/hellem03/3d407edf-2963-43e7-8f60-b7f8fddbfff3
+ 2269  mount
+ 2270  ls /media/hellem03/3d407edf-2963-43e7-8f60-b7f8fddbfff3
+ 2271  ls /media/hellem03/7f3566c4-946c-442c-8027-99aa8b75f5a4
+ 2272  ls /media/hellem03/0dec0e4a-046b-4f76-9efc-91a283bfa860
+ 2273  mount
+ 2274  umount /dev/sdb1
+ 2275  mount
+ 2276  dmesg
+ 2277  mount
+ 2278  ls /media/hellem03/3d407edf-2963-43e7-8f60-b7f8fddbfff3
+ 2279  ls /media/hellem03/0dec0e4a-046b-4f76-9efc-91a283bfa860
+ 2280  mount
+ 2281  dmesg
+ 2282  mount
+ 2283  fdisk -l /dev/sdb
+ 2284  ls /media/hellem03/4bb4c09d-5a85-4720-8c75-0849fab70da5
+ 2285  ls /media/hellem03/a69390c3-c278-4c4f-a049-e37739c73301
+ 2286  ls /media/hellem03/b8191343-20b8-41a7-8233-0acc30866272
+ 2287  ls /media/hellem03/e6d41ce7-500a-4efb-80af-1e9c469ce354
+ 2288  ls -lrt
+ 2289  mount
+ 2290  unmount /dev/sdb2 /dev/sdb1 /dev/sdb4 /dev/sdb3
+ 2291  umount /dev/sdb2 /dev/sdb1 /dev/sdb4 /dev/sdb3
+ 2292  ls -lrt
+ 2293  fdisk -l 
+ 2294  ls -l /dev/loop*
+ 2295  ls -lrt
+ 2296  fdisk -l card.img.Abaxis.Bionic
+ 2297  dmesg
+ 2298  mount
+ 2299  dmesg
+ 2300  fdisk -l /dev/sdb
+ 2301  mount
+ 2302  time dd if=card.img.Abaxis.Bionic of=/dev/sdb bs=1M status=progress
+ 2303  dmesg
+ 2304  mount
+ 2305  dmesg
+ 2306  time dd if=card.img.Abaxis.Bionic of=/dev/sdb bs=1M status=progress
+ 2307  dmesg
+ 2308  mount
+ 2309  dmesg
+ 2310  fdisk -l /dev/sdb
+ 2311  mount
+ 2312  dmesg
+ 2313  mount
+ 2314  dmesg
+ 2315  fdisk -l /dev/sdb
+ 2316  mount
+ 2317  ls /media/hellem03/WPE
+ 2318  history | grep dd
+ 2319  time dd if=card.img.Abaxis.Bionic of=/dev/sdb bs=1M status=progress
+ 2320  mount
+ 2321  umount /dev/sdb1
+ 2322  mount
+ 2323  ls
+ 2324  mount
+ 2325  ls /media/hellem03/3d407edf-2963-43e7-8f60-b7f8fddbfff3
+ 2326  ls /media/hellem03/0dec0e4a-046b-4f76-9efc-91a283bfa860
+ 2327  ls /media/hellem03/7f3566c4-946c-442c-8027-99aa8b75f5a4
+ 2328  ls
+ 2329  mkdir jb
+ 2330  mount /dev/sdb4 jb
+ 2331  fsck /dev/sdb4
+ 2332  dmesg
+ 2333  fdisk -l /dev/sdb
+ 2334  fsck /dev/sdb4
+ 2335  ls -lrt
+ 2336  fdisk -l vspro.img
+ 2337  history | grep scp
+ 2338  ls -lrt
+ 2339  rmdir jb
+ 2340  scp borris@10.0.20.236:~/edgar/build_script/card.img.test .
+ 2341  history | grep time
+ 2342  time dd if=card.img.Abaxis.Bionic of=/dev/sdb bs=10M status=progress
+ 2343  mount
+ 2344  umount /dev/sdb1 /dev/sdb2 /dev/sdb3
+ 2345  mount
+ 2346  umount /dev/sdb1 /dev/sdb2 /dev/sdb3
+ 2347  ls -lrt
+ 2348  history
+ 2349  time dd if=card.img.test of=/dev/sdb bs=10M status=progress
+ 2350  fdisk /dev/sdb
+ 2351  fdisk -l /dev/sdb
+ 2352  fsck /dev/sdb4
+ 2353  echo "514304 - 514048" | bc
+ 2354  mount
+ 2355  history | grep dd
+ 2356  scp borris@10.0.20.236:~/edgar/build_script/card.img.test .
+ 2357  time dd if=card.img.test of=/dev/sdb bs=10M status=progress
+ 2358  mount
+ 2359  fdisk -l /dev/sdb
+ 2360  fsck /dev/sdb4
+ 2361  ls -lrt
+ 2362  date
+ 2363  rm card.img.test
+ 2364  scp borris@10.0.20.236:~/edgar/build_script/card.img.test .
+ 2365  mount
+ 2366  umount /dev/sdb3 /dev/sdb2 /dev/sdb1
+ 2367  time dd if=card.img.test of=/dev/sdb bs=10M status=progress
+ 2368  mount
+ 2369  fdisk -l /dev/sdb
+ 2370  fsck /dev/sdb4
+ 2371  echo "514560 - 514304" | bc
+ 2372  ls -lrt
+ 2373  rm card.img.test
+ 2374  scp borris@10.0.20.236:~/edgar/build_script/card.img.test .
+ 2375  time dd if=card.img.test of=/dev/sdb bs=10M status=progress
+ 2376  mount
+ 2377  fdisk -l /dev/sdb
+ 2378  fsck /dev/sdb4
+ 2379  ls
+ 2380  mkdir mnt
+ 2381  cd mnt
+ 2382  mkdir sdb1 sdb2 sdb3 sdb4
+ 2383  mount /dev/sdb1 sdb1
+ 2384  mount /dev/sdb2 sdb2
+ 2385  mount /dev/sdb3 sdb3
+ 2386  mount /dev/sdb4 sdb4
+ 2387  ls
+ 2388  mount
+ 2389  ls
+ 2390  ls sdb1
+ 2391  ls sdb3
+ 2392  ls sdb2
+ 2393  ls sdb4
+ 2394  mount
+ 2395  umount /dev/sdb1 /dev/sdb2 /dev/sdb3 /dev/sdb4
+ 2396  cd ..
+ 2397  ls -lrt
+ 2398  history | grep scp | grep Bionic
+ 2399  rm card.img.Abaxis.Bionic
+ 2400  scp borris@10.0.20.236:~/edgar/build_script/card.img.Abaxis.Bionic .
+ 2401  ls -lrt
+ 2402  history | grep Abaxis | grep dd
+ 2403  mount
+ 2404  history | grep Abaxis | grep dd
+ 2405  time dd if=card.img.Abaxis.Bionic of=/dev/sdb bs=10M status=progress
+ 2406  mount
+ 2407  fdisk -l /dev/sdb
+ 2408  mount
+ 2409  cd mnt
+ 2410  mount
+ 2411  mount /dev/sdb1 sdb2
+ 2412  ls sdb2
+ 2413  umount /dev/sdb1
+ 2414  mount
+ 2415  find /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f -name load.cfg
+ 2416  find /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e -name load.cfg
+ 2417  cat /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/i386-pc/load.cfg
+ 2418  ls /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e
+ 2419  ls /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f
+ 2420  vi /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/i386-pc/load.cfg
+ 2421  ls
+ 2422  ls sdb1
+ 2423  cd ..
+ 2424  mount
+ 2425  vi /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/i386-pc/load.cfg
+ 2426  cat /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/i386-pc/load.cfg
+ 2427  unmount /dev/sdb1 /dev/sdb2 /dev/sdb3 /dev/sdb4
+ 2428  umount /dev/sdb1 /dev/sdb2 /dev/sdb3 /dev/sdb4
+ 2429  find /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f -name load.cfg
+ 2430  find /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e -name load.cfg
+ 2431  vi /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/i386-pc/load.cfg
+ 2432  cat /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/i386-pc/load.cfg
+ 2433  ls /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e
+ 2434  ls /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub
+ 2435  cat /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/i386-pc/load.cfg
+ 2436  vi /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/grub.cfg
+ 2437  pwd
+ 2438  history | grep scp
+ 2439  scp borris@10.0.20.236:~/edgar/build_script/card.img.Abaxis.Bionic .
+ 2440  mount
+ 2441  umount /dev/sdb1 /dev/sdb3 /dev/sdb4 /dev/sdb2
+ 2442  history | grep Abaxis | grep dd
+ 2443  time dd if=card.img.Abaxis.Bionic of=/dev/sdb bs=10M status=progress
+ 2444  scp borris@10.0.20.236:~/edgar/build_script/card.img.Abaxis.Bionic .
+ 2445  mount
+ 2446  umount /dev/sdb1 /dev/sdb2 /dev/sdb3 /dev/sdb4
+ 2447  time dd if=card.img.Abaxis.Bionic of=/dev/sdb bs=10M status=progress
+ 2448  mount
+ 2449  find /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e -name "*.tga"
+ 2450  find /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f -name "*.tga"
+ 2451  ls /media/hellem03/4bfcbed0-3ff3-482a-b3d7-08c21d3118c9
+ 2452  ls /media/hellem03/832665b9-b8a1-4912-b37f-0a67f489a962
+ 2453  find /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e -name grub.cfg
+ 2454  find /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f -name grub.cfg
+ 2455  cat /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/usr/share/doc/grub-common/examples/grub.cfg
+ 2456  mount
+ 2457  find /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f -name grub.cfg
+ 2458  vi /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/usr/share/doc/grub-common/examples/grub.cfg
+ 2459  find /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f -name grub.cfg
+ 2460  find /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e -name "grub.cfg"
+ 2461  vi /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/grub.cfg
+ 2462  mount
+ 2463  ls
+ 2464  ls ../Downloads/
+ 2465  history | grep scp
+ 2466  history | grep scp | tail -2
+ 2467  history | grep scp | tail -4
+ 2468  scp ../Downloads/linux-image-generic_4.15.0.70.72_i386.deb borris@10.0.20.236:~/edgar/build_script/
+ 2469  mount
+ 2470  fdisk -l /dev/sdb
+ 2471  man blkid
+ 2472  ls /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e
+ 2473  man grub-install
+ 2474  mount
+ 2475  ls /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e
+ 2476  man update-grub
+ 2477  find /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e -name device.map
+ 2478  cat /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/device.map
+ 2479  vi /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/device.map
+ 2480  ls /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/boot
+ 2481  ls /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f
+ 2482  ls /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/boot
+ 2483  man grub-install
+ 2484  grub-install --debug --target=i386-pc --grub-devicemap=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/device.map --boot-directory=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/boot /dev/sdb 
+ 2485  grub-install --debug --target=i386-pc --grub-mkdevicemap=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/device.map --boot-directory=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/boot /dev/sdb 
+ 2486  history
+ 2487  cat /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/device.map
+ 2488  grub-install --debug --target=i386-pc --grub-mkdevicemap=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/device.map --boot-directory=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/boot /dev/sdb 
+ 2489  cat /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/boot/grub/device.map
+ 2490  cat /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/device.map
+ 2491  grub-install --debug --target=i386-pc --grub-mkdevicemap=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/boot/grub/device.map --boot-directory=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/boot /dev/sdb 
+ 2492  cat /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/boot/grub/device.map
+ 2493  grub-install --debug --target=i386-pc --grub-mkdevicemap=grub/device.map --boot-directory=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/boot /dev/sdb 
+ 2494  file /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/boot/grub/device.map
+ 2495  echo -e "(hd0) /dev/sdb\n" > /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/boot/grub/device.map
+ 2496  cat /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/boot/grub/device.map
+ 2497  grub-install --debug --target=i386-pc --grub-mkdevicemap=grub/device.map --boot-directory=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/boot /dev/sdb 
+ 2498  mount
+ 2499  ls /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e
+ 2500  history
+ 2501  ls
+ 2502  history > cmds.save
+ 2503  mount
+ 2504  ls /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f
+ 2505  ls /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/boot
+ 2506  ls -l /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/boot
+ 2507  dpkg --list | grep grub
+ 2508  uname -r
+ 2509  uname -a
+ 2510  cat /etc/issue
+ 2511  history | grep scp
+ 2512  scp borris@10.0.20.236:~/edgar/build_script/card.img.test .
+ 2513  history | grep dd
+ 2514  history
+ 2515  history | grep dd
+ 2516  time dd if=card.img.test of=/dev/sdb bs=10M status=progress
+ 2517  mount
+ 2518  find /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e -name grub.cfg
+ 2519  cat /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/grub.cfg
+ 2520  vi /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/grub.cfg
+ 2521  mount
+ 2522  ls /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f
+ 2523  ls /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/boot
+ 2524  cat /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/boot/linux.cfg 
+ 2525  chroot /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f dpkg --list | grep grub
+ 2526  chroot /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/ apt-get install grub
+ 2527  chroot /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/ apt-get install grub2
+ 2528  chroot /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/ apt-get update
+ 2529  ping dk.archive.ubuntu.com
+ 2530  chroot /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/ apt-get --fix-missing
+ 2531  chroot /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/ apt-get --fix-missing install
+ 2532  chroot /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/ apt-get install grub2
+ 2533  chroot /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/ apt-cache search grub2
+ 2534  chroot /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/ apt-get update grub2
+ 2535  chroot /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/ apt-get install grub2
+ 2536  chroot /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/ which grub-install
+ 2537  chroot /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/ which ls /dev/sda
+ 2538  chroot /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/ ls /dev/sda
+ 2539  chroot /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/
+ 2540  ls
+ 2541  which xxd
+ 2542  man xxd
+ 2543  dd if=/dev/sdb bs=512 count=1 | xxd
+ 2544  man grub-setup
+ 2545  file -s /dev/sdb
+ 2546  dd if=/dev/sdb bs=512 count=1 | strings
+ 2547  mount
+ 2548  find /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e -name load.cfg
+ 2549  cat /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/i386-pc/load.cfg
+ 2550* ls /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/
+ 2551  ls /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/boot
+ 2552  cat /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/
+ 2553  ls /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/
+ 2554  ls /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e
+ 2555  find /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e -name load.cfg
+ 2556  cat /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/i386-pc/load.cfg
+ 2557  blkid
+ 2558  umount /dev/sdb1 /dev/sdb2 /dev/sdb3 /dev/sdb4
+ 2559  ls -lrt
+ 2560  mount
+ 2561  fdisk -lu /dev/sdb
+ 2562  history | grep time
+ 2563  ls -lrt
+ 2564  date
+ 2565  time dd if=card.img.test of=/dev/sdb bs=10M status=progress
+ 2566  mount
+ 2567  umount /dev/sdb1
+ 2568  mount
+ 2569  fdisk -l /dev/sdb
+ 2570  dd if=/dev/sdb bs=512 count=1 | xxd
+ 2571  dd if=/dev/sdb bs=512 count=1 | strings
+ 2572  mount
+ 2573  fdisk -lu /dev/sdb
+ 2574  umount /dev/sdb1 /dev/sdb2 /dev/sdb3 /dev/sdb4
+ 2575  man mbrdump
+ 2576  fdisk -l /dev/sdb
+ 2577  mount
+ 2578  df /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e
+ 2579  df -h /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e
+ 2580  history | grep grub-install
+ 2581  ls --boot-directory=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/boot
+ 2582  ls /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e
+ 2583  find /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e -name device.map
+ 2584  cat /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/device.map
+ 2585  vi /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/device.map
+ 2586  ls /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/
+ 2587  man grub-install
+ 2588  grub-install -compress=gz --target=i386-pc --debug --grub-mkdevicemap=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/device.map --boot-directory=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e /dev/sdb
+ 2589  grub-install --compress=gz --target=i386-pc --debug --grub-mkdevicemap=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/device.map --boot-directory=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e /dev/sdb
+ 2590  mount
+ 2591  umount /dev/sdb1 /dev/sdb2 /dev/sdb3 /dev/sdb4
+ 2592  find /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e -name grub.cfg
+ 2593  vi /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/grub.cfg
+ 2594  find /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e -name linux.cfg
+ 2595  find /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f -name linux.cfg
+ 2596  cat /media/hellem03/275eac90-d4bf-4188-b817-e03424e06d2f/boot/linux.cfg
+ 2597  vi /media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/grub.cfg
+ 2598  grub-install --compress=gz --target=i386-pc --debug --grub-mkdevicemap=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/device.map --boot-directory=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e /dev/sdb
+ 2599  mount
+ 2600  umount /dev/sdb1 /dev/sdb2 /dev/sdb4 /dev/sdb3
+ 2601  history
+ 2602  ping 10.0.20.169
+ 2603  ls -lrt
+ 2604  history > cmds.save
+ 2605  cat /etc/fstab
+ 2606  cat /etc/resolv.conf
+ 2607  ping 127.0.0.53
+ 2608  history
+ 2609  vi cmds.save
+ 2610  ls
+ 2611  ls -lrt
+ 2612  mount
+ 2613  umount /dev/sdb1 /dev/sdb3 /dev/sdb2 /dev/sdb4
+ 2614  ls -lrt
+ 2615  dd if=/dev/sdb of=card.img.test.backup bs=10M progress=status
+ 2616  man dd
+ 2617  dd if=/dev/sdb of=card.img.test.backup bs=10M status=progress
+ 2618  ls -lrt
+ 2619  vi README
+ 2620  mount
+ 2621  man xrandr
+ 2622  file /usr/bin/dbus-launch
+ 2623  dpkg -S dbus_launch
+ 2624  ls -l /usr/bin/dbus-launch 
+ 2625  file /usr/bin/dbus-launch
+ 2626  man dpkg
+ 2627  dpkg -S dbus
+ 2628  dpkg -S dbus-launch
+ 2629  mount
+ 2630  umount  /dev/sdb2 /dev/sdb4 /dev/sdb1 /dev/sdb3
+ 2631  ls -lrt
+ 2632  cat README
+ 2633  history | grep dd
+ 2634  dd if=/dev/sdb of=card.img.test.backup2 bs=10M status=progress
+ 2635  ls -lrt
+ 2636  vi README 
+ 2637  mount
+ 2638  ls
+ 2639  ls -lrt
+ 2640  mount
+ 2641  umount /dev/sdb1 /dev/sdb2 /dev/sdb3 /dev/sdb4
+ 2642  history | grep dd
+ 2643  dd if=/dev/sdb of=card.img.test.backup3 bs=10M status=progress
+ 2644  ls -lrt
+ 2645  mount
+ 2646  ls
+ 2647  vi README
+ 2648  ls -lrt
+ 2649  vi cmds.save
+ 2650  ls -lrt
+ 2651  cat README 
+ 2652  ls
+ 2653  cd ..
+ 2654  ls
+ 2655  cd modifications/
+ 2656  ls
+ 2657  tree root
+ 2658  ls
+ 2659  ls -lrt
+ 2660  ls root
+ 2661  ls -lR root
+ 2662  pwd
+ 2663  ls
+ 2664  tree root
+ 2665  cp /home/hellem03/Downloads/eGTouch_v2.5.7413.L-x.zip .
+ 2666  ls -lrt
+ 2667  vi installs.txt 
+ 2668  cd root
+ 2669  mkdir -p usr/lib/i386-linux-gnu/
+ 2670  tree
+ 2671  cd ..
+ 2672  ls
+ 2673  vi installs.txt 
+ 2674  ls
+ 2675  pwd
+ 2676  history
+ 2677  history | grep grub-install
+ 2678  history
+ 2679  history | grep grub-install
+ 2680  pwd
+ 2681  cd ..
+ 2682  ls
+ 2683  cd modifications/
+ 2684  ls
+ 2685  history > cmds.txt
