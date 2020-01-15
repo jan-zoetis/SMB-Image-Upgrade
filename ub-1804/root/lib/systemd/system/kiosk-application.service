@@ -1,0 +1,15 @@
+[Unit]
+Description=Start Application 
+After=xserver.service
+
+[Service]
+Type=simple
+User=smb
+WorkingDirectory=/home/smb
+ExecStart=/home/smb/start-application.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+

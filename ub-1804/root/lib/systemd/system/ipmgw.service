@@ -1,0 +1,15 @@
+[Unit]
+Description=IPM Gateway
+After=broadband.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ipmgw/bin
+ExecStart=/home/ipmgw/bin/ipmgw.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+
+
