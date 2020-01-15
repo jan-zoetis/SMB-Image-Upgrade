@@ -10,8 +10,6 @@
 # 
 # DISCLAIMER: The missing tools or changes of the tool syntax might make the script fail.
 ###############################################################################################################
-# Dependecies:
-# debootstrap build-essential kpartx grub2 grub-pc-bin e2fsprogs util-linux parted kernel-package netpbm imagemagick
 
 # Some settings for non-interactive execution (if we are not sourced)
 [ -z "$PS1" ] && set -x -e # show executed commands & exit after a command fails
@@ -21,13 +19,19 @@
 ## CONFIGURATION section: The safest place to make changes ;-) 
 
 # Base name of the resulting image
-export IMG=card.img
+#export IMG=card.img
+export IMG=card.img.test
+#export IMG=card.img.Abaxis.Bionic
 export IMG_SIZE=$((4*10**9/(1024*1024))) # 4 bilion bytes, rounded to MiB
+echo "working on image file: $IMG"
 # Image partitioning in MiBytes
 export START_BOOTFS=1  # start of first partition (space left for partition information, bootloader. Also enforces partition alignment for improved performance)
-export SIZE_BOOTFS=7     # size of boot partition
-export SIZE_ROOTFS=892 # size of rootfs
-export SIZE_ROOTFS2=$SIZE_ROOTFS # The second root partitions used to allow simple upgrades. Set this to small number if this is not needed.
+export SIZE_BOOTFS=10     # size of boot partition
+#export SIZE_BOOTFS=7     # size of boot partition
+export SIZE_ROOTFS=1784 # size of rootfs
+#export SIZE_ROOTFS=1600 # size of rootfs
+export SIZE_ROOTFS2=10 # The second root partitions used to allow simple upgrades. Set this to small number if this is not needed.
+#export SIZE_ROOTFS2=$SIZE_ROOTFS # The second root partitions used to allow simple upgrades. Set this to small number if this is not needed.
 export SIZE_USERFS=$((IMG_SIZE-START_BOOTFS-SIZE_BOOTFS-SIZE_ROOTFS-SIZE_ROOTFS2)) # The user partition will use remaining storage
 # use raring (13.04) version of the cups
 export CUPS_RARING=no	# We don't, the separate image with this future is created at the end
@@ -41,17 +45,18 @@ export CUPS_RARING=no	# We don't, the separate image with this future is created
 export CUSTOMISATIONS="Abaxis QuickVet"
 
 # Should we build everything from scratch (=yes). If (=no), the content of earlier build saved in <partition>fs.tgz is used to polulate partitions 
-export RUN_FULL_BUILD=yes
+export RUN_FULL_BUILD=no
 
 # Kernel version information
 if [ "$RUN_FULL_BUILD" != "yes" ] ; then
     # Use previously compiled kernel 
-    export KERNEL_VERSION=3.8.13.5   # Version name in compiled result (the number might increase with kernel package updates)
+    #export KERNEL_VERSION=3.8.13.25   # Version name in compiled result (the number might increase with kernel package updates)
+    export KERNEL_VERSION=5.0.0-23-generic   # Version name in compiled result (the number might increase with kernel package updates)
     export KERNEL_DEB=src/linux-image-${KERNEL_VERSION}_*.deb # The debian package of compiled kernel
 else
     # Build kernel from scratch
     # Ubuntu names kernel source packages and directories slightly different, hence 2 different names for the same thing
-    export KERNEL_PACKAGE=linux-image-3.8.0-25-generic # Name of Ubuntu kernel package
+    export KERNEL_PACKAGE=linux-image-3.8.0-44-generic # Name of Ubuntu kernel package
     export KERNEL_SRCDIR=linux-lts-raring-3.8.0        # Directory name after package is extracted
     if [ -f src/$KERNEL_SRCDIR/include/config/kernel.release ] ; then
 	export KERNEL_VERSION=`cat src/$KERNEL_SRCDIR/include/config/kernel.release `
@@ -68,6 +73,7 @@ fi
 export START_ROOTFS1=$((START_BOOTFS+SIZE_BOOTFS))
 export START_ROOTFS2=$((START_ROOTFS1+SIZE_ROOTFS))
 export START_USERFS=$((START_ROOTFS2+SIZE_ROOTFS2))
+#export END_USERFS=$((IMG_SIZE-1))    # user partition until the end
 export END_USERFS=$IMG_SIZE    # user partition until the end
 
 
@@ -87,7 +93,8 @@ function format_image {
 # run in subshell, in case the file is sourced and function is used interactively
 ( set -x -e
     # Create empty image file
-    dd if=/dev/zero of=$IMG bs=1M count=$IMG_SIZE
+  
+    dd if=/dev/zero of=$IMG bs=1M count=$((IMG_SIZE+1))
 
     # Partition image file
     parted --script $IMG -- mklabel msdos	# create the partition table
@@ -129,8 +136,10 @@ function prepare_partition_devices {
     ## allocate a loop device for each partition
     DEV_BOOTFS=`losetup -f --show $IMG -o $((START_BOOTFS*1024*1024))   --sizelimit $((SIZE_BOOTFS*1024*1024))`
     DEV_ROOTFS1=`losetup -f --show $IMG -o $((START_ROOTFS1*1024*1024)) --sizelimit $((SIZE_ROOTFS*1024*1024))`
-    DEV_ROOTFS2=`losetup -f --show $IMG -o $((START_ROOTFS2*1024*1024)) --sizelimit $((SIZE_ROOTFS*1024*1024))`
-    DEV_USERFS=`losetup -f --show $IMG -o $((START_USERFS*1024*1024))`
+    #DEV_ROOTFS2=`losetup -f --show $IMG -o $((START_ROOTFS2*1024*1024)) --sizelimit $((SIZE_ROOTFS*1024*1024))`
+    DEV_ROOTFS2=`losetup -f --show $IMG -o $((START_ROOTFS2*1024*1024)) --sizelimit $((SIZE_ROOTFS2*1024*1024))`
+    #DEV_USERFS=`losetup -f --show $IMG -o $((START_USERFS*1024*1024))`
+    DEV_USERFS=`losetup -f --show $IMG -o $((START_USERFS*1024*1024)) --sizelimit $((SIZE_USERFS*1024*1024))`
 
     # Save the list of partition devices to be reused later
     cat << EOF > .partitions
@@ -182,7 +191,7 @@ function install_packages {
 # run in subshell, in case the file is sourced and function is used interactively
 ( set -x -e
     # Populate root filesystem with minimal installation
-    debootstrap  --variant=minbase --arch=i386 precise mnt/root http://dk.archive.ubuntu.com/ubuntu/
+    debootstrap  --variant=minbase --arch=i386 bionic mnt/root http://dk.archive.ubuntu.com/ubuntu/
     cp -a local/etc/apt/sources.list  mnt/root/etc/apt/
     # Note: If the distribution is changed (from "precise"), the source.list has to also be updated.
     # These two changes should be enougth to change from Ubuntu 12.04 to any other version. 
@@ -196,12 +205,15 @@ function install_packages {
     chroot mnt/root apt-get update
     chroot mnt/root apt-get -y install apt-utils
     chroot mnt/root apt-get -y install initramfs-tools dhcpcd5 dropbear openssh-client smbclient libsmbclient cifs-utils net-tools iputils-ping
+    chroot mnt/root apt-get clean
     chroot mnt/root apt-get -y install usbmount acpid apt-utils libc-bin
     # Some non required packages, added for convenience:
-    chroot mnt/root apt-get -y install dialog vim-tiny bash-completion less rsyslog usbutils man beep mc
+    #chroot mnt/root apt-get -y install dialog vim-tiny bash-completion less rsyslog usbutils man beep mc
+    chroot mnt/root apt-get -y install dialog vim-tiny bash-completion less usbutils man beep mc
     # Clean the apt-get temp directories once in a while:
     chroot mnt/root apt-get clean
     chroot mnt/root apt-get -y install xserver-xorg-video-intel x11-xserver-utils nodm xinit xterm xorg libgtk-3-0 xinput-calibrator
+    chroot mnt/root apt-get -y install locales
     chroot mnt/root locale-gen en_US.UTF-8
     # Clean the apt-get temp directories once in a while:
     chroot mnt/root apt-get clean
@@ -223,7 +235,10 @@ function install_cups {
 	cp -a local.raring_cups/* mnt/root
 	chroot mnt/root apt-get update
     fi
-    chroot mnt/root apt-get -y install hplip-cups foomatic-filters cups
+    #chroot mnt/root apt-get -y install hplip-cups foomatic-filters cups
+    chroot mnt/root apt-get -y install cups 
+    chroot mnt/root apt-get -y install hplip 
+    chroot mnt/root apt-get -y install foomatic-filters
 )
 }
 
@@ -284,9 +299,8 @@ function cleanup_rootfs {
 ( set -x -e
     # Some final cleaning up
 
-# Edgar: Disabled, because the network will not work in the chroot environment. The file will be recreated on the target anyway.
-#    # remove DNS settings of the build machine
-#    echo -n > mnt/root/etc/resolv.conf
+    # remove DNS settings of the build machine
+    echo -n > mnt/root/etc/resolv.conf
     # clean downloaded package cache
     chroot mnt/root apt-get clean
     # clean log files
@@ -386,6 +400,8 @@ function build_kernel {
 
 	# Change the splash logo
 	for c in $CUSTOMISATIONS ; do
+            echo "now current directory is:"
+            pwd
 	    pnmnoraw ../logo/${c}_kernel.ppm > drivers/video/logo/logo_linux_clut224.ppm
 	    make -j $BUILD_CPUS bzImage
 	    cp arch/x86/boot/bzImage ../../local.${c}/boot/vmlinuz-$KERNEL_VERSION
@@ -425,7 +441,7 @@ function build_base_image {
 	install_packages 
 	apply_local_changes 
 
-	fetch_kernel_source
+	#fetch_kernel_source
 	build_kernel
 	
 	# Create tar archives of final partition content for faster future install
