@@ -5,7 +5,7 @@ The base image was created by sourcing script.bash and running selected function
 Grub stuff:
 
 For reasons (so far) unknown the installation of grub performed by script.bash (install_bootloader)
-(accessing the partitions via the loop devices) does not work when the script is run on 18.04.
+(accessing the partitions via loop devices) does not work when the script is run on 18.04.
 
 Grub was successfully installed with grub-install directly on the partition on the generated CF card
 using the command below (after the generated image was copied to the CF car using dd) and the 
@@ -26,14 +26,16 @@ On the 12.04 the Galaxy touch screen is configured via /home/smb/xorg.conf and c
 using xinput-calibrator that generates a configuration section that is added to xorg.conf.
 
 This does not work on 18.04. A "driver" package for the touch screen (eGTouch_v2.5.7413.L-x.zip)
-must be installed. This installation contains:
+must be installed. (http://www.eeti.com/drivers_Linux.html). 
+
+This installation contains:
 
     eGTouchD (the driver daemon)
     eGTouchU 
     eCalib   (calibration tool)
 
-The 12.04 image uses the minimal display manager "nodm" which is designed for running an application
-in kiosk mode. This setup has been changed to run without nodm, but just run the X server and the
+The 12.04 image uses the minimal display manager "nodm" that is designed for running an application
+in kiosk mode. This setup has been simplified to run without nodm, but just run the X server and the
 kiosk application.
 
     dpkg --purge nodm
@@ -45,18 +47,20 @@ The following apt packages was needed:
     dbus-x11
 
 
-
 libpng12.so.0 copied from 12.04: to /usr/lib/i386-linux-gnu/libpng12.so.0
 
 
+Using X configuration from /etc/X11/xorg.conf (default)
 
+Added systemd scripts (in /lib/systemd/system):
 
-Added systemd scripts:
+    xserver.service               Starts X
+    egtouch.service               Starts the eGTouchD daemon
+    kiosk-application.service     starts the SMB application as user smb
 
-    /lib/systemd/system/xserver.service
-    /lib/systemd/system/egtouch.service
-    /lib/systemd/system/kiosk-application.service
+Added SMB application (Application) start script
 
+    /home/smb/start-application.sh
 
 
 
@@ -75,5 +79,13 @@ And vice versa when going back
 
 # rm /disable-root-ro
 # cp /etc/fstab.ro /etc/fstab
+
+Added scripts and fstabs for this:
+
+    /home/smb/go-ro.sh
+    /home/smb/go-rw.sh
+
+    /etc/fstab.ro
+    /etc/fstab.rw
 
 
