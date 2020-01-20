@@ -42,6 +42,12 @@ This installation contains:
     eGTouchU
     eCalib   (calibration tool)
 
+The current application uses "system" to execute xinput_calibrator. The resulting parameters are redirected
+to a text file and subsequently extracted and /home/smb/xorg.conf is re-generated accordingly.
+This code will need to be modified to work on both platforms.
+On 18.04 the application eCalib must be executed instead, this automatically saves the resulting calibration
+parameters under /etc. The parameters will take effect after restarting eGTouchD.
+
 The 12.04 image uses the minimal display manager "nodm" that is designed for running an application
 in kiosk mode. This setup has been simplified to run without nodm, but just run the X server and the
 kiosk application.
@@ -127,5 +133,20 @@ Script.bash installs a number of packages related to CUPS.
 However in the resulting image some files in the cups package is missing.
 Perhaps due to the order of installation. It was necessary to re-install
 the cups apt package. This is to be investigated.
+
+Automount of USB devices
+
+The package "usbmount" is installed to provide automatic mount of usb sticks.
+This feature was not working "out of the box".
+
+This turned out to caused by a configuration parameter in
+      /lib/systemd/system/systemd-udevd.service
+
+      MountFlags=slave
+
+must be changed to :
+
+      MountFlags=shared
+
 
 
