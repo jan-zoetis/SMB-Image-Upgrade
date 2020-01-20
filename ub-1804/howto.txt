@@ -2,17 +2,25 @@ Base Image Generation:
 
 The base image was created by sourcing script.bash and running selected functions manually as follows:
 
+# source script.bash
+
+
+TBD
+
+#
+#
+
 Grub stuff:
 
 For reasons (so far) unknown the installation of grub performed by script.bash (install_bootloader)
 (accessing the partitions via loop devices) does not work when the script is run on 18.04.
 
 Grub was successfully installed with grub-install directly on the partition on the generated CF card
-using the command below (after the generated image was copied to the CF car using dd) and the 
+using the command below (after the generated image was copied to the CF car using dd) and the
 card mounted.
 
-grub-install --compress=gz --target=i386-pc --debug 
-             --grub-mkdevicemap=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/device.map 
+grub-install --compress=gz --target=i386-pc --debug
+             --grub-mkdevicemap=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e/grub/device.map
              --boot-directory=/media/hellem03/88d67b2d-08eb-4406-bff5-2b932da0fa4e  (/boot???)
              /dev/sdb
 
@@ -26,12 +34,12 @@ On the 12.04 the Galaxy touch screen is configured via /home/smb/xorg.conf and c
 using xinput-calibrator that generates a configuration section that is added to xorg.conf.
 
 This does not work on 18.04. A "driver" package for the touch screen (eGTouch_v2.5.7413.L-x.zip)
-must be installed. (http://www.eeti.com/drivers_Linux.html). 
+must be installed. (http://www.eeti.com/drivers_Linux.html).
 
 This installation contains:
 
     eGTouchD (the driver daemon)
-    eGTouchU 
+    eGTouchU
     eCalib   (calibration tool)
 
 The 12.04 image uses the minimal display manager "nodm" that is designed for running an application
@@ -63,7 +71,7 @@ Added SMB application (Application) start script
     /home/smb/start-application.sh
 
 
-To make the root file system read-writable the method described in the document 
+To make the root file system read-writable the method described in the document
 describing the 12.04 image is for some reason not working on 18.04
 
 # mount -o remount,rw /mnt/root-ro
@@ -72,7 +80,7 @@ describing the 12.04 image is for some reason not working on 18.04
 
 The following must be added before reboot
 
-# cp /mnt/root-ro/etc/fstab.rw /mnt/root-ro/etc/fstab 
+# cp /mnt/root-ro/etc/fstab.rw /mnt/root-ro/etc/fstab
 
 And vice versa when going back
 
@@ -90,23 +98,27 @@ Added scripts and fstabs for this:
 Dropbear (Light weight sshd):
 
 Dropbear was for some reason enabled in initramfs-tools which resulted in error messages in boot.log.
-Since it is not needed during start up the dropbear files were removed from 
+Since it is not needed during start up the dropbear files were removed from
 
     /usr/share/initramfs-tools/init-premount
     /usr/share/initramfs-tools/init-bottom
 
 NOTE:
-   
-Dropbear files still remain in 
- 
+
+Dropbear files still remain in
+
     /usr/share/initramfs-tools/conf-hooks.d/dropbear
     /usr/share/initramfs-tools/hooks/dropbear
 
-They should be removed as well.    
+They should be removed as well.
 
     and run update-initramfs -u
 
-NOTE: Should be able to fix this by droping some of the apt packages.
+NOTE: Should be able to fix this by dropping some of the apt packages.
+
+installing the apt-packet "dropbear" also installs dropbear-initramfs
+we should probably install dropbear-bin and dropbear-run instead.
+
 
 
 CUPS stuff:
@@ -115,3 +127,5 @@ Script.bash installs a number of packages related to CUPS.
 However in the resulting image some files in the cups package is missing.
 Perhaps due to the order of installation. It was necessary to re-install
 the cups apt package. This is to be investigated.
+
+
