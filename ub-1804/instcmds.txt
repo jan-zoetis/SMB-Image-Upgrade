@@ -1,0 +1,659 @@
+    1  ifconfig
+    2  sudo apt-get install net-tools
+    3  /sbin/ifconfig
+    4  vi /etc/hostname
+    5  ifconfig
+    6  apt-get install lxkeymap
+    7  apt-get update
+    8  apt-get install lxkeymap
+    9  exit
+   10  sudo bash
+   11  exit
+   12  apt-get install g++
+   13  exit
+   14  vi /etc/hosts
+   15  exit
+   16  +++++
+   17  ls
+   18  which gcc
+   19  sudo bash
+   20  which gcc
+   21  gcc --versino
+   22  gcc --version
+   23  ifconfig
+   24  cat /etc/hosts
+   25  cat /etc/hostname
+   26  sudo bash
+   27  ifconfig
+   28  uname /r
+   29  apt-get install openssh-server
+   30  ps auxww | grep openssh
+   31  ps auxww | grep sshd
+   32  ls
+   33  cd edgar
+   34  ls
+   35  exit
+   36  ls
+   37  ifconfig
+   38  sudo bash
+   39  ls
+   40  ls -lrt
+   41  df
+   42  df -h
+   43  ls
+   44  ls edgar
+   45  rm -rf edgar
+   46  gunzip edgar.tar.gz 
+   47  df
+   48  ls -lrt
+   49  df
+   50  df -h
+   51  parted -l
+   52  apt-cache search gparted
+   53  apt-get install gparted
+   54  gparted
+   55  mount
+   56  df -h
+   57  ls
+   58  gunzip edgar.tar.gz 
+   59  ls -lrt
+   60  tar tf edgar.tar 
+   61  ls -lrt
+   62  exit
+   63  man gparted
+   64  man parted
+   65  parted -l
+   66  man parted
+   67  mount
+   68  sudo bash
+   69  ls
+   70  tar xf edgar.tar 
+   71  ls -lrt
+   72  cd edgar
+   73  ls
+   74  cd build_script/
+   75  ls -lrt
+   76  pwd
+   77  ls
+   78  cd build_script/
+   79  ls
+   80  source script.bash 
+   81  format_image
+   82  ls
+   83  rm card.img.Abaxis 
+   84  source script.bash 
+   85  format_image
+   86  source script.bash 
+   87  format_image
+   88  rm /home/borris/edgar/build_script/card.img.
+   89  ls
+   90  rm card.img
+   91  format_image
+   92  ls -lrt
+   93  source script.bash 
+   94  format_image
+   95  source script.bash 
+   96  format_image
+   97  mount
+   98  mount_partitions
+   99  mount
+  100  install_bootloader
+  101  ls -lrt
+  102  vi grub_log
+  103  cat mnt/boot/grub/device.map
+  104  mount
+  105  file /dev/loop0
+  106  ls /mnt/boot
+  107  cd mnt/boot
+  108  ls
+  109  du -s -h
+  110  df -h
+  111  cd ../..
+  112  mount
+  113  unmount_partitions
+  114  mount
+  115  ls -lrt
+  116  source script.bash 
+  117  mount_partitions
+  118  mount
+  119  unmount_partitions
+  120  mount
+  121  ls
+  122  rm card.img
+  123  source script.bash 
+  124  format_image
+  125  mount_partitions
+  126  mount
+  127  install_bootloader
+  128  mount
+  129  df -h
+  130  unmount_partitions
+  131  ls -lrt
+  132  rm card.img
+  133  source script.bash 
+  134  format_image
+  135  mount_partitions
+  136  install_bootloader
+  137  vi grub_log 
+  138  ls -lrt
+  139  source script.bash 
+  140  debootstrap  --variant=minbase --arch=i386 precise mnt/root http://dk.archive.ubuntu.com/ubuntu/
+  141  apt-get install debootstrap
+  142  apg-get install build-essential
+  143  apgt-et install build-essential
+  144  apt-get install build-essential
+  145  apt-get install kpartx
+  146  dpkg --list | grep grub2
+  147  dpkg --list | grep grub
+  148  dpkg --list | grep e2fsprogs
+  149  dpkg --list | grep util-linux
+  150  dpkg --list | grep parted
+  151  dpkg --list | grep kernel-package
+  152  apt-get install kernel-package
+  153  dpkg --list | grep netpbm
+  154  apt-get install netpbm
+  155  apt-get install imagemagick
+  156  history
+  157  debootstrap  --variant=minbase --arch=i386 precise mnt/root http://dk.archive.ubuntu.com/ubuntu/
+  158  debootstrap  --variant=minbase --arch=i386 bionic mnt/root http://dk.archive.ubuntu.com/ubuntu/
+  159  cat local/etc/apt/sources.list
+  160  cat /etc/apt/sources.list
+  161  view /etc/apt/sources.list
+  162  man cp
+  163  cp -a /etc/apt/sources.list mnt/root/etc/apt
+  164  echo -e '#!/bin/sh\nexit 101'
+  165  echo -e '#!/bin/sh\nexit 101' > mnt/root/usr/sbin/policy-rc.d
+  166  chmod a+x mnt/root/usr/sbin/policy-rc.d
+  167  export DEBIAN_FRONTEND=noninteractive # make apt-get ask less questions
+  168  chroot mnt/root apt-get update
+  169  chroot mnt/root apt-get -y install apt-utils
+  170  chroot mnt/root apt-get -y install initramfs-tools
+  171  chroot mnt/root apt-get -y install dhcpcd5
+  172  chroot mnt/root apt-get -y install dropbear
+  173  chroot mnt/root apt-get -y install openssh-client
+  174  chroot mnt/root apt-get -y install smbclient
+  175  chroot mnt/root apt-get -y install libsmbclient
+  176  chroot mnt/root apt-get -y install cifs-utils
+  177  chroot mnt/root apt-get -y install net-tools
+  178  chroot mnt/root apt-get -y install iputils-ping
+  179  chroot mnt/root apt-get -y install usbmount
+  180  chroot mnt/root apt-get -y install acpid
+  181  chroot mnt/root apt-get -y install apt-utils
+  182  chroot mnt/root apt-get -y install libc-bin
+  183  chroot mnt/root apt-get -y install dialog
+  184  chroot mnt/root apt-get -y install vim-tiny
+  185  chroot mnt/root apt-get -y install bash-completion
+  186  chroot mnt/root apt-get -y install less
+  187  chroot mnt/root apt-get -y install rsyslog
+  188  chroot mnt/root apt-get -y install usbutils
+  189  chroot mnt/root apt-get -y install uman
+  190  chroot mnt/root apt-get -y install man
+  191  chroot mnt/root apt-get -y install beep
+  192  chroot mnt/root apt-get -y install mc
+  193  history
+  194  chroot mnt/root apt-get -y xserver-xorg-video-intel
+  195  chroot mnt/root apt-get -y install xserver-xorg-video-intel
+  196  chroot mnt/root apt-get -y install x11-xserver-utils
+  197  chroot mnt/root apt-get -y install nodm
+  198  chroot mnt/root apt-get clean
+  199  chroot mnt/root apt-get -y install nodm
+  200  chroot mnt/root apt-get -y install xinit
+  201  history
+  202  mount
+  203  df -h
+  204  cd mnt/root
+  205  ls
+  206  cd ..
+  207  ls
+  208  mount
+  209  unmount_partitions
+  210  ls
+  211  rm card.img
+  212  source script.bash 
+  213  format_image
+  214  mount_partitions
+  215  mount
+  216  df -h
+  217  unmount_partitions
+  218  source script.bash 
+  219  format_image
+  220  ls
+  221  rm card.img 
+  222  format_image
+  223  mount_partitions
+  224  mount
+  225  df -h
+  226  debootstrap  --variant=minbase --arch=i386 bionic mnt/root http://dk.archive.ubuntu.com/ubuntu/
+  227  history | grep sources.lig
+  228  history | grep sources.list
+  229  cp -a /etc/apt/sources.list mnt/root/etc/apt
+  230  echo -e '#!/bin/sh\nexit 101' > mnt/root/usr/sbin/policy-rc.d
+  231  chmod a+x mnt/root/usr/sbin/policy-rc.d
+  232  export DEBIAN_FRONTEND=noninteractive # make apt-get ask less questions
+  233  chroot mnt/root apt-get update
+  234  chroot mnt/root apt-get -y install apt-utils
+  235  chroot mnt/root apt-get -y install initramfs-tools dhcpcd5 dropbear openssh-client smbclient libsmbclient cifs-utils net-tools iputils-ping
+  236  chroot mnt/root apt-get clean
+  237  chroot mnt/root apt-get -y install usbmount acpid apt-utils libc-bin
+  238  chroot mnt/root apt-get -y install dialog vim-tiny bash-completion less rsyslog usbutils man beep mc
+  239  chroot mnt/root apt-get clean
+  240  chroot mnt/root apt-get -y install xserver-xorg-video-intel
+  241  chroot mnt/root apt-get -y install x11-xserver-utils
+  242  chroot mnt/root apt-get -y install nodm
+  243  chroot mnt/root apt-get -y install xinit
+  244  chroot mnt/root apt-get -y install xterm
+  245  chroot mnt/root apt-get -y install xorg
+  246  chroot mnt/root apt-get -y install libgtk-3-0
+  247  chroot mnt/root apt-get -y install xinput-calibrator
+  248  chroot mnt/root locale-gen en_US.UTF-8
+  249  apt-cache search locales
+  250  apt-cache search locales | less
+  251  chroot mnt/root apt-get -y install locales
+  252  chroot mnt/root locale-gen en_US.UTF-8
+  253  chroot mnt/root apt-get clean
+  254  df -h
+  255  chroot mnt/root apt-get -y install cups
+  256  df -h
+  257  ls /mnt/user
+  258  ls mnt/user
+  259  history
+  260  man apt-get
+  261  unmount_partitions
+  262  ls
+  263  rm card.img
+  264  mount
+  265  source script.bash q
+  266  source script.bash 
+  267  format_image
+  268  mount_partitions
+  269  mount
+  270  df -h
+  271  debootstrap  --variant=minbase --arch=i386 bionic mnt/root http://dk.archive.ubuntu.com/ubuntu/
+  272  history | grep sources.list
+  273  cp -a /etc/apt/sources.list mnt/root/etc/apt
+  274  echo -e '#!/bin/sh\nexit 101' > mnt/root/usr/sbin/policy-rc.d
+  275  chmod a+x mnt/root/usr/sbin/policy-rc.d
+  276  export DEBIAN_FRONTEND=noninteractive # make apt-get ask less questions
+  277  chroot mnt/root apt-get update
+  278  chroot mnt/root apt-get -y install apt-utils
+  279  chroot mnt/root apt-get -y install initramfs-tools dhcpcd5 dropbear openssh-client smbclient libsmbclient cifs-utils net-tools iputils-ping
+  280  chroot mnt/root apt-get clean
+  281  chroot mnt/root apt-get -y install usbmount acpid apt-utils libc-bin
+  282  chroot mnt/root apt-get -y install dialog vim-tiny bash-completion less
+  283  chroot mnt/root apt-get -y install usbutils man beep mc
+  284  chroot mnt/root apt-get clean
+  285* chroot mnt/root apt-get -y install xserver-xorg-video-intel x11-xserver-u
+  286  chroot mnt/root apt-get -y install locales
+  287  chroot mnt/root locale-gen en_US.UTF-8
+  288  chroot mnt/root apt-get clean
+  289  chroot mnt/root apt-get -y install cups
+  290  df -h
+  291* chroot mnt/root apt-get 
+  292  df -h
+  293  apt-cache search | grep hplib
+  294  apt-cache search hplib
+  295  apt-cache search hpcups
+  296  chroot mnt/root apt-get -y install hplib
+  297  chroot mnt/root apt-get update
+  298  chroot mnt/root apt-get -y install hplib
+  299  chroot mnt/root apt-get -y install hplip
+  300  history
+  301  apt-cache search hpcups
+  302  chroot mnt/root apt-get -y install printer-driver-hpcups
+  303  history
+  304  apt-cache search foomatic
+  305  chroot mnt/root apt-get -y install foomatic-filters
+  306  mount
+  307  for f in mnt/root/etc/cron.* ; do mv $f ${f}_disabled ; mkdir $f ; done
+  308  chown -R 0:0 local*
+  309  chown -R 1000:1000 local*/home/smb
+  310  chown -R 0:7 local/home/smb/rootfs/etc/cups
+  311  chown 0:0 local/home/smb/bin/append_fstab
+  312  chmod u+s local/home/smb/bin/append_fstab
+  313  cp -a local/*  mnt/root
+  314  history | grep sources.list
+  315  cp -a /etc/apt/sources.list mnt/root/etc/apt
+  316  cp -a mnt/root/etc/cups mnt/root/home/smb/rootfs/etc/
+  317  rm -r mnt/root/etc/cups
+  318  ln -s /home/smb/rootfs/etc/cups mnt/root/etc/cups
+  319  echo aufs >> /etc/initramfs-tools/modules
+  320  chroot mnt/root useradd -s /bin/bash smb
+  321  echo -e "smb:smb\nroot:smb" | chroot  mnt/root chpasswd
+  322  chroot mnt/root usermod -aG dialout smb
+  323  chroot mnt/root usermod -aG lpadmin smb
+  324  chroot mnt/root usermod -aG lp smb
+  325  chmod u+s mnt/root/sbin/shutdown
+  326  echo 'export PATH=$PATH:/usr/sbin:/sbin:/home/smb/bin' >> mnt/root/etc/profile
+  327  echo '. /etc/default/locale' >> mnt/root/etc/profile
+  328  echo -n > mnt/root/etc/udev/rules.d/70-persistent-net.rules
+  329  echo -n > mnt/root/lib/udev/rules.d/75-persistent-net-generator.rules
+  330  ifconfig
+  331  mount
+  332  ls mnt/boot
+  333  mount
+  334  ls /mnt/root
+  335  ls mnt/root
+  336  ls mnt/root/boot
+  337  ls mnt/root/lib
+  338  ls
+  339  ls -la
+  340  uname -r
+  341  ls /boot
+  342  cd /boot
+  343  cat config-5.0.0-23-generic 
+  344  vi config-5.0.0-23-generic 
+  345  cd
+  346  ls
+  347  cd edgar
+  348  ls
+  349  cd build_script/
+  350  ls
+  351  ls -lrt
+  352  cp card.img card.img.save
+  353  pwd
+  354  cd local.bootloader/
+  355  ls
+  356  cd mnt
+  357  ls
+  358  cd boot
+  359  ls
+  360  cd grub
+  361  ls
+  362  vi grub.cfg
+  363  cd ..
+  364  ls
+  365  cd local.bootloader/mnt/boot
+  366  ls
+  367  cd grub
+  368  ls
+  369  vi grub.cfg
+  370  ls
+  371  cd ..
+  372  ls
+  373  cd ..
+  374  ls
+  375  cd boot
+  376  ls
+  377  cd grub_theme
+  378  ls
+  379  cat theme.txt 
+  380  cd ..
+  381  ls
+  382  cd grub
+  383  ls
+  384  vi grub.cfg
+  385  cd ..
+  386  find . -name linux.cfg
+  387  ls mnt/boot
+  388  chroot mnt/root apt-get -y install linux-image-5.0.0-23-generic
+  389  ls mnt/boot
+  390  ls mnt/root
+  391  ls mnt/root/boot
+  392  cd mnt/root
+  393  ls
+  394  ls -lrt
+  395  ls boo
+  396  ls boot
+  397  cd boot
+  398  ls
+  399  cd grub
+  400  ls
+  401  cat gfxblacklist.txt
+  402  ls
+  403  cd ..
+  404  ls
+  405  ls -lrt
+  406  cd ../..
+  407  cd ..
+  408  df -h
+  409  source script.bash 
+  410  echo $KERNEL_VERSION
+  411  source script.bash 
+  412  echo $KERNEL_VERSION
+  413  create_boot_cfg $KERNEL_VERSION /dev/sda2
+  414  create_boot_cfg $KERNEL_VERSION /dev/sda2 > mnt/root/boot/linux.cfg
+  415  cat mnt/root/boot/linux.cfg
+  416  cat /mnt/boot/grub/grub.cfg
+  417  install_bootloader
+  418  ls -lrt
+  419  vi grub_log
+  420  df -h
+  421  cleanup_rootfs
+  422  unmount_partitions
+  423  ls -lrt
+  424  cp card.img card.img.base
+  425  prepare_partition_devices
+  426  mount
+  427  mount_partitions
+  428  mount
+  429  cp -a local.Abaxis/* mnt/root
+  430  unmount_partitions 
+  431  ls -lrt
+  432  mv card.img card.img.Abaxis.Bionic
+  433  ifconfig
+  434  ls -lrt
+  435  mount
+  436  source script.bash 
+  437  mount_partitions
+  438  prepare_partition_devices
+  439  mount_partitions
+  440  mount
+  441  ls mnt/boot
+  442  ls mnt/boot/grub
+  443  cd mnt/boot/grub
+  444  ls
+  445  vi grub.cfg
+  446  cd ../..
+  447  ls boot
+  448  ls boot/grub
+  449  cd ..
+  450  ls /mnt/root
+  451  ls mnt/root
+  452  ls mnt/root/boot
+  453  ls mnt/root/boot/linux.cfg 
+  454  cat mnt/root/boot/linux.cfg
+  455  cd mnt/boot
+  456  ls
+  457  cd ../root
+  458  cd boot
+  459  ls -lrt
+  460  cat linux.cfg 
+  461  cat .partitions
+  462  cd ../..
+  463  cd ..
+  464  mount
+  465  ls mnt/boot/grub
+  466  ls mnt/boot
+  467  vi grub_log 
+  468  cat /home/borris/edgar/build_script/mnt/boot/grub/i386-pc/load.cfg
+  469  cat .partitions
+  470  cd local.bootloader/
+  471  ls
+  472  cd mnt
+  473  ls
+  474  cd boot
+  475  ls
+  476  ls grub
+  477  cd ../..
+  478  cd ..
+  479  ls
+  480  cat mnt/boot/grub/device.map 
+  481  mount
+  482  echo $PWD
+  483  cat mnt/boot/grub/device.map
+  484  ls /mnt/boot
+  485  ls mnt/boot
+  486  ls mnt/grub/boot
+  487  ls mnt/boot/grub
+  488  cat mnt/boot/grub/device.map 
+  489  ls mnt/boot
+  490  ls local.bootloader/
+  491  ls local.bootloader/mnt
+  492  ls
+  493  ls local.bootloader/mnt
+  494  ls local.bootloader/mnt/boot
+  495  ls local.bootloader/mnt/boot/grub
+  496  ls local.bootloader/mnt/boot/grub/grub.cfg
+  497  vi local.bootloader/mnt/boot/grub/grub.cfg
+  498  ls
+  499  ls local.Abaxis
+  500* 
+  501  ls local.Abaxis/boot
+  502  ls local
+  503  ls local/root
+  504  ls local
+  505  ls local/etc
+  506  ls local/root
+  507  ls
+  508  ls local.bootloader/
+  509  ls local.bootloader/mnt
+  510  ls local.bootloader/mnt/boot
+  511  ls local.bootloader/mnt/boot/grub
+  512  ls
+  513  vi grub_log
+  514  cat /home/borris/edgar/build_script/mnt/boot/grub/i386-pc/load.cfg
+  515  man grub-install
+  516  ls mnt/boot/grub
+  517  ls mnt/boot/grub/i386-pc/
+  518  ls mnt/boot/grub/i386-pc/load*
+  519  ls -l mnt/boot/grub/i386-pc/load.cfg
+  520  mount
+  521  cat .partitions
+  522  source script.bash
+  523  install_bootloader
+  524  vi grub_log 
+  525  unmount_partitions
+  526  mount
+  527  source script.bash 
+  528  ls -la
+  529  cat .partitions 
+  530  prepare_partitions
+  531  prepare_partition_devices
+  532  mount_partitions
+  533  mount
+  534  df -h
+  535  man grub-install
+  536  mount
+  537  ls mnt/root
+  538  ls mnt/root/boot
+  539  ls mnt/root/boot/grub
+  540  ls mnt/root/boot/mnt/
+  541  ls mnt/root/boot
+  542  ls mnt/root/mnt/boot
+  543  ls mnt/root/mnt/boot/grub
+  544  ls mnt/root/mnt/boot/grub/grub.cfg
+  545  ls mnt/boot
+  546  ls mnt/root/mnt/boot
+  547  find . -name load.cfg
+  548  cat ./mnt/root/mnt/boot/grub/i386-pc/load.cfg
+  549  man grup-install
+  550  man install-grub
+  551  man grub-install
+  552  diff ./mnt/root/mnt/boot/grub/i386-pc/load.cfg ./mnt/boot/grub/i386-pc/load.cfg
+  553  cat ./mnt/root/mnt/boot/grub/i386-pc/load.cfg
+  554  man grub-install
+  555  cat mnt/boot/grub/device.map
+  556  mount
+  557  vi grub_log 
+  558  mount
+  559  umount /home/borris/edgar/build_script/mnt/root/mnt/boot
+  560  mount
+  561  source script.bash
+  562  install_bootloader
+  563  vi grub_log 
+  564  mount
+  565  source script.bash 
+  566  unmount_partitions
+  567  mount
+  568  prepare_partition_devices
+  569  mount_partitions
+  570  mount
+  571  cd /home/borris/edgar/build_script/mnt/user
+  572  ls
+  573  cd ..
+  574  mount
+  575  cd /home/borris/edgar/build_script/mnt/user
+  576  ls
+  577  cd /home/borris/edgar/build_script/mnt/boot
+  578  ls
+  579  cd /home/borris/edgar/build_script/mnt/root
+  580  ls
+  581  cd /home/borris/edgar/build_script/mnt/user
+  582  ls
+  583  cd ../..
+  584  ls -lrt
+  585  source script.bash 
+  586  mount
+  587  cd mnt/root
+  588  ls
+  589  mount
+  590  cd /home/borris/edgar/build_script/mnt/user
+  591  ls
+  592  cd /home/borris/edgar/build_script/mnt/root/home/smb
+  593  ls
+  594  cd /home/borris/edgar/build_script/mnt/user
+  595  ls
+  596  df -h
+  597  ls 
+  598  cd
+  599  mount
+  600  df -h
+  601  ls /home/borris/edgar/build_script/mnt/user
+  602  df -h
+  603  mount
+  604  df -h
+  605  ls
+  606  cd edgar
+  607  ls
+  608  cd build_script/
+  609  ls
+  610  fdisk -l card.img.Abaxis.Bionic
+  611  ls -lrt
+  612  fdisk -l card.img.save
+  613  ls -lrt
+  614  rm card.img.save
+  615  rm card.img.base
+  616  rm card.img.Abaxis.Bionic
+  617  ls -lrt
+  618  mount
+  619  unmount_devices
+  620  unmount_partitions
+  621  source script.bash 
+  622  format_image
+  623  ls -lrt
+  624  rm card.img
+  625  source script.bash 
+  626  format_image
+  627  ls -lrt
+  628  fdisk -l card.img
+  629  mount
+  630  mount_partitions
+  631  mount
+  632  fdisk /home/borris/edgar/build_script/mnt/user
+  633  fdisk /dev/loop4
+  634  fsck /dev/loop4
+  635  mount
+  636  umount /home/borris/edgar/build_script/mnt/user
+  637  fsck /dev/loop4
+  638  umount /home/borris/edgar/build_script/mnt/root/home/smb
+  639  fsck /dev/loop4
+  640  unmount_partitions
+  641  mount
+  642  mount_partitions
+  643  mount
+  644  mount_partitions
+  645  fdisk -l card.img
+  646  mount_partitions
+  647  prepare_partition_devices
+  648  mount_partitions
+  649  mount
+  650  install_packages
+  651  ls -lrt
+  652  rm card.img
+  653  source script.bash 
+  654  format_image
+  655  mount_partitions
+  656  install_packages
+  657  history | grep hpcups
+  658  history | grep apt-get
+  659  history > instcmds.txt
