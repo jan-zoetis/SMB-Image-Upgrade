@@ -7,6 +7,10 @@ The base image was created by sourcing script.bash and running selected function
 
 TBD
 
+To install generic kernel:
+
+chroot mnt/root apt-get -y install linux-image-5.0.0-23-generic
+
 #
 #
 
