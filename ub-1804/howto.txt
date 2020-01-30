@@ -153,4 +153,8 @@ must be changed to :
       MountFlags=shared
 
 
+Boot time:
+
+Edited /etc/systemd/system.conf (DefaultTimeoutStopSec=2s)
+
 
