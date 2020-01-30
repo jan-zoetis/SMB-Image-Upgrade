@@ -1,0 +1,334 @@
+    1  ls
+    2  pwd
+    3  mount
+    4  ifconfig
+    5   su /
+    6  su -
+    7   reboot
+    8  sudo bash
+    9  su -
+   10  exit
+   11   exit
+   12  xterm &
+   13  export DISPLAY=:0.0
+   14  xeyes
+   15  ps auxww | grep xterm
+   16  xterm
+   17  xeyes
+   18  xinput
+   19  xinput_calibrator 
+   20  ls /etc/X11/xorg.conf.d/99-calibration.conf
+   21  pwd
+   22  ls
+   23  vi xorg.conf 
+   24  cat .xsession
+   25  pwd
+   26  ls -la
+   27  cat .xinitrc 
+   28  vi xorg.conf 
+   29  vi .xinitrc
+   30  vi .xinitrc
+   31  echo $DISPLAY
+   32  xinput_calibrator 
+   33  vi xorg.conf 
+   34  which get_precalib.sh
+   35  which xinput_calibrator 
+   36  find / -name get_precalib.sh
+   37  vi xorg.conf 
+   38  vi .xinitrc
+   39  cat .xinitrc
+   40  vi xorg.conf 
+   41  xinput set-int-prop "eGalaxTouch Virtual Device for Touch" "Evdev Axes Swap" 8 1 &
+   42  xinput set-int-prop "Evdev Axes Swap" 8 1 & "Evdev Axis Inversion" 8 0 0 &
+   43  jobs
+   44  xinput set-int-prop "eGalaxTouch Virtual Device for Touch" "Evdev Axes Swap" 8 1 &
+   45  jobs
+   46  ps auxww | grep xinput
+   47  xinput set-int-prop "eGalaxTouch Virtual Device for Touch" "Evdev Axes Swap" 8 1
+   48  xinput --list
+   49  man xinput
+   50  xinput set-int-prop "eGalaxTouch Virtual Device for Touch" "Evdev Axes Swap" 8 11
+   51  man xinput
+   52  man xinput --get-feedbacks 11
+   53  xinput --get-feedbacks 11
+   54  man xinput
+   55  xinput --list-props 11
+   56  xinput set-int-prop "eGalaxTouch Virtual Device for Touch" "Evdev Axes Swap" 8 1
+   57  xinput --list-props 11
+   58  xeyes
+   59  eGTouchU
+   60  ecalib -h
+   61  eCalib -h
+   62  eCalib Linz9
+   63  xeyes
+   64  exit
+   65  su /
+   66  su -
+   67  su -
+   68    exit
+   69  sudo bash
+   70  su -
+   71  ls
+   72   su -
+   73   su
+   74  su
+   75   su
+   76  su
+   77  su
+   78  su 
+   79  su
+   80  su
+   81  su
+   82  su
+   83  ls -l
+   84  startx
+   85  echo $DISPLAY
+   86  sudo bash
+   87  /bin/su -
+   88  startx
+   89  exit
+   90  pwd
+   91  diff xorg.conf /etc/X11/xorg.conf
+   92  ls -lrt
+   93  diff xorg.conf xorg.conf.exp
+   94  ls -lrt
+   95  cp xorg.conf xorg.conf.exp2
+   96  diff xorg.conf.org /etc/X11/xorg.conf
+   97  cp xorg.conf.org xorg.conf
+   98  diff xorg.conf /etc/X11/xorg.conf
+   99  startx
+  100  export DISPLAY=:0.0
+  101  startx
+  102  echo $DISPLAY
+  103  Xorg
+  104  /bin/su -
+  105  xeyes
+  106  pwd
+  107  ls
+  108  vi /home/smb/start-application.sh
+  109  which bash
+  110  vi /home/smb/start-application.sh
+  111  cat .xinitrc 
+  112  vi /home/smb/start-application.sh
+  113  file /home/smb/Code/Application
+  114  chmod 755 start-application.sh 
+  115  ls -la
+  116  echo $DISPLAY
+  117  ./start-application.sh 
+  118  pwd
+  119  vi start-application.sh 
+  120  exit
+  121  export DISPLAY=:0.0
+  122  exit
+  123  ls -lrt
+  124  cat start-application.sh 
+  125  ./start-application.sh 
+  126  ls /tmp
+  127  cat /tmp/eGTouch_2019.12.17_10.log
+  128  pwd
+  129  /usr/bin/eGTouchD
+  130  ps auxww | grep eGTouchD
+  131  /usr/bin/eGTouchD
+  132  sudo bash
+  133  /bin/su -
+  134  eGTouchD
+  135  ps auxww | grep eGTouch
+  136  exit
+  137  which shutsonw
+  138  which shutdown
+  139  /sbin/shutdown -h now
+  140  exit
+  141  ls
+  142  ls -la
+  143  exit
+  144  export DISPLAY=:0.0
+  145  xterm
+  146  xeyes
+  147  pwd
+  148  ls
+  149  ls -l
+  150  diff xorg.conf /etc/X11/xorg.conf 
+  151  xwd -out cal1.xwd
+  152  ls -lrt
+  153  file cal1.xwd
+  154  exit
+  155  ls
+  156  lpq
+  157  whic lp
+  158  which lp
+  159  lp
+  160  lp -d Officejet-Pro-8000-A809-1 start-application.sh
+  161  /usr/bin/lp
+  162  /usr/bin/lp -d Officejet-Pro-8000-A809-1 
+  163  /usr/bin/lp -d Officejet-Pro-8000-A809-1 start-application.sh
+  164  ls -l /usr/bin/lp
+  165  /usr/bin/lp -d Officejet-Pro-8000-A809-1 ddd
+  166  lpq
+  167  /usr/bin/lp -d Officejet-Pro-8000-A809-1 ddd
+  168  /usr/bin/lp -d Officejet-Pro-8000-A809-1 start-application.sh 
+  169  man lp
+  170  lpstat -v
+  171  lpinfo -v
+  172  lpq -a
+  173  history | grep lp
+  174  /usr/bin/lp
+  175  lpstat -l -p Officejet-Pro-8000-A809-1
+  176  lpstat -l -p Officejet-Pro-8000
+  177  lpstat -l -p Officejet
+  178  history | less
+  179  history
+  180  history | grep lp
+  181  lpstat -l -p Officejet-Pro-8000-A809-1
+  182  lpstat -a
+  183  lpstat -l -p Officejet-Pro-8000-A809
+  184  lp -d Officejet-Pro-8000-A809 start-application.sh 
+  185  lpq -P Officejet-Pro-8000-A809
+  186  history
+  187  lpstat -a
+  188  pwd
+  189  ls
+  190  cd rootfs
+  191  ls
+  192  cd etc
+  193  ls
+  194  cd cups
+  195  ls
+  196  cd ppd
+  197  ls -l
+  198  cd 
+  199  cd Code
+  200  ls
+  201  ls data
+  202  cd data 
+  203  touch test
+  204  rm test
+  205  vi 'AB0008 14012020 1008.txt'
+  206  ls -la
+  207  vi 'AB0008 14012020 1008.txt'
+  208  ls
+  209  vi 'AB0008 14012020 1008.txt'
+  210  ls
+  211  rm 'AB0008 14012020 1008.txt'
+  212  ls
+  213  cd .
+  214  cd ..
+  215  ls
+  216  ls -la
+  217  cat xyz.smb 
+  218  date
+  219  lpstat -a
+  220  ls
+  221  ls -lrt
+  222  ls data
+  223  file data
+  224  rmdir data
+  225  ls -lrt
+  226  date
+  227  cat UserLog.smb 
+  228  ls
+  229  chmod u-w data
+  230  ls -lrt
+  231  chmod u+w data
+  232  ls -lrt
+  233  rmdir data
+  234  su -
+  235  pwd
+  236  ls
+  237  ls
+  238  pwd
+  239  file data
+  240  ls -l
+  241  ls -lr
+  242  ls -lrt
+  243  chmod 444 data
+  244  ls -lrt
+  245  ls -lrt
+  246  chmod ugo-r data
+  247  ls -lrt
+  248  rmdir data
+  249  ls -lrt
+  250  ls
+  251  ls -lrt
+  252  ls -lrt
+  253  ls -lrt
+  254  cd ..
+  255  ls
+  256  ls -lrt
+  257  ls Code
+  258  pwd
+  259  cd Code
+  260  ls
+  261  ls -l
+  262  ls
+  263  ls -l
+  264  ls -lrt
+  265  cat history.smb 
+  266  ls data
+  267  cd data
+  268  ls
+  269  less 'QV0000 17012020 1159.txt'
+  270  ls
+  271  lpstat -a
+  272  man lpq
+  273  lpq -P Officejet-Pro-8000-A809
+  274  ls
+  275  exit
+  276  pwd
+  277  ls
+  278  ./Appnew
+  279  cat start-application.sh 
+  280  export LD_LIBRARY_PATH=/home/smb/lib
+  281  export DISPLAY=:0.0
+  282  ./Appnew
+  283  cd /home/smb/Code
+  284  ls -l
+  285  sudo bash
+  286  su -
+  287  cd ..
+  288  ls
+  289  cat application.1579251708835536952.log
+  290  ./Appnew
+  291  ./Appnew
+  292  ./Appnew
+  293  ./Appnew
+  294  ./Appnew
+  295  ./Appnew
+  296  su 
+  297  exit
+  298  lsusb
+  299  sudo
+  300  sudo bash
+  301  su
+  302  ls
+  303  ls -l
+  304  pwd
+  305  ls /tmp
+  306  cat start-application.sh 
+  307  export LD_LIBRARY_PATH=/home/smb/lib
+  308  export DISPLAY=:0.0
+  309  ./Appnew
+  310  cd /home/smb
+  311  ls
+  312  ls -la
+  313  ls
+  314  cat start-application.sh 
+  315  export LD_LIBRARY_PATH=/home/smb/lib
+  316  export DISPLAY=:0.0
+  317  ls
+  318  ./Appnew
+  319  pwd
+  320  ls
+  321  ls
+  322  ./Appnew.2
+  323  ./Appnew.2
+  324  ./Appnew.2
+  325  pwd
+  326  ls
+  327  ls -lrt
+  328  cat application.1579531712975141890.log
+  329  ./Appnew.2
+  330  ./Appnew.2
+  331  exit
+  332  history
+  333  ls -lrt
+  334  history > smb-history.txt

@@ -1,0 +1,1000 @@
+ 1008  cd /var/tmp
+ 1009  ls
+ 1010  cd eGTouch_v2.5.7413.L-x
+ 1011  ls
+ 1012  vi setup.sh
+ 1013  history
+ 1014  systemctl disable eGTouchD.service
+ 1015  reboot
+ 1016  ls /etc/eGT*
+ 1017  ls /etc/systemd.d
+ 1018  cd /tmp
+ 1019  ls
+ 1020  cd /var/tmp
+ 1021  ls
+ 1022  cd eGTouch_v2.5.7413.L-x
+ 1023  ls
+ 1024  vi setup.sh
+ 1025  cd /
+ 1026  find . -name "eGTouch*" 
+ 1027  cd /
+ 1028  ls
+ 1029  cat /etc/resolv.conf
+ 1030  cat /etc/nsswitch.conf 
+ 1031  exit
+ 1032  cat /etc/systemd/system.conf 
+ 1033  q!
+ 1034  cd /
+ 1035  ls
+ 1036  rm disable-root-ro
+ 1037  cd /etc
+ 1038  ls fstab*
+ 1039  cp fstab fstab.rw
+ 1040  cat fstab.rw
+ 1041  cat fstab.org
+ 1042  cp fstab.org fsta
+ 1043  mv fsta fstab
+ 1044  exit
+ 1045  ping dr.dk
+ 1046  cd /tmp
+ 1047  ls
+ 1048  ls -l
+ 1049  date
+ 1050  mount
+ 1051  cd /
+ 1052  ls
+ 1053  cd /tmp
+ 1054  ls
+ 1055  ls -lrt /tmp
+ 1056  date
+ 1057  cd /
+ 1058  ls
+ 1059  rm disable-root-ro
+ 1060  cd /etc
+ 1061  cd /mnt/root-ro
+ 1062  ls -l fstab*
+ 1063  cat fstab
+ 1064  cat fstab.ro
+ 1065  cat fstab.org
+ 1066  cp fstab.org fstab
+ 1067  exit
+ 1068  ls /mnt/root-ro
+ 1069  pwd
+ 1070  exit
+ 1071  ls -lrt
+ 1072  ls /home/smb
+ 1073  cd /home/smb
+ 1074  ls
+ 1075  cat .xinitrc
+ 1076  cat /var/log/app.log
+ 1077  systemctl status dropbear
+ 1078  dpkg --list | grep dropbear
+ 1079  vi /etc/init.d/dropbear 
+ 1080  vi /etc/default/dropbear
+ 1081  systemctl dropbear status
+ 1082  systemctl status dropbear
+ 1083  find . -name dropbear.service
+ 1084  find / -name dropbear.service
+ 1085  mount
+ 1086  cat /sys/fs/cgroup/devices/system.slice/dropbear.service
+ 1087  ls /sys/fs/cgroup/devices/system.slice/dropbear.service
+ 1088  cat /run/systemd/generator.late/dropbear.service
+ 1089  ls -l /sbin/shutdow
+ 1090  ls -l /sbin/shutdown
+ 1091  file /sbin/shutdown
+ 1092  file /bin/systemctl
+ 1093  ls -l /bin/systemctl
+ 1094  exit
+ 1095  cd /etc
+ 1096  ls
+ 1097  exit
+ 1098  mount
+ 1099  ls /root
+ 1100  ls /
+ 1101  cat /etc/fstab
+ 1102  ls
+ 1103  cd /home/smb
+ 1104  ls
+ 1105  history
+ 1106  history | grep apt-get
+ 1107  history | grep dpkg
+ 1108  lsmod
+ 1109  lsmod | grep i915
+ 1110  dpkg -S i915
+ 1111  ls -lrt
+ 1112  rm test
+ 1113  cat cmds.txt
+ 1114  rm cmds.txt 
+ 1115  ls
+ 1116  ls src
+ 1117  cd src
+ 1118  ls
+ 1119  cat append_fstab.c 
+ 1120  ls -l
+ 1121  cat Makefile
+ 1122  cd ..
+ 1123  ls
+ 1124  cd src
+ 1125  ls
+ 1126  cd ..
+ 1127  ls
+ 1128  ls rootfs
+ 1129  ls rootfs/etc
+ 1130  cat start-application.sh 
+ 1131  ls -lrt
+ 1132  find / -name libpng12.so.0
+ 1133  history
+ 1134  history | grep apt
+ 1135  dpkg -S i915
+ 1136  cat /etc/systemd/system.conf
+ 1137  ifconfig
+ 1138  cd /var/tmp
+ 1139  ls
+ 1140  find / -name libpng12.so.0
+ 1141  dpkg -S i915
+ 1142  vi /etc/initramfs-tools/scripts/init-bottom/root-ro 
+ 1143  ls /
+ 1144  cd /etc
+ 1145  ls
+ 1146  ls -l fstab*
+ 1147  mv fstab.org fstab.ro
+ 1148  ls -l fstab*
+ 1149  more /etc/acpi/events
+ 1150  cd /etc/acpi/events
+ 1151  ls
+ 1152  tail /proc/acpi/event
+ 1153  uname -r
+ 1154  dpkg --list | grep acpi
+ 1155  man acpi
+ 1156  man acipid
+ 1157  man acpid
+ 1158  ls /proc/acpi
+ 1159  ls /proc/acpi/wakeup
+ 1160  tail /proc/acpi/wakeup
+ 1161  ps auxwww | grep acpid
+ 1162  exit
+ 1163  ps axjf
+ 1164  cat /var/run/acpid.socket 
+ 1165  file /var/run/acpid.socket 
+ 1166  ls -l /var/run/acpid.socket 
+ 1167  telnet /var/run/acpid.socket
+ 1168  netcat /var/run/acpid.socket
+ 1169  apt-cache search telnet
+ 1170  apt-cache search telnet | less
+ 1171  apt-get install telnet
+ 1172  telnet /var/run/acpid.socket
+ 1173  netstat -a -p | grep LISTEN
+ 1174  telnet localhost 16496
+ 1175  tail -f /run/acpid.socket
+ 1176  tail -f /var/run/acpid.socket 
+ 1177  ls /dev/input
+ 1178  file /dev/input/event*
+ 1179  tail -f /dev/input/event0
+ 1180  tail -f /dev/input/event1
+ 1181  xinput --list
+ 1182  export DISPLAY=:0.0
+ 1183  xinput --list
+ 1184  tail -f /dev/input/event11
+ 1185  ls /var/log
+ 1186  vi /var/log/Xorg.0.log
+ 1187  tail -f /dev/input/event16
+ 1188  man netcat
+ 1189  apt-cache search netcat
+ 1190  apt-get install netcat
+ 1191  man netcat
+ 1192  apt-cache search bsd-netcat
+ 1193  apt-cache search netcat
+ 1194  apt-get install netcat-openbsd
+ 1195  which netcat
+ 1196  man netcat
+ 1197  netcat -U /var/run/acid.socket
+ 1198  netcat -U /var/run/acpid.socket
+ 1199  man netcat
+ 1200  which nc
+ 1201  which netcat
+ 1202  ls -l /bin/nc
+ 1203  ls -l /bin/netcat
+ 1204  ls /etc/alternatives
+ 1205  find / -name "*acpi*"
+ 1206  man acpi
+ 1207  man acpid
+ 1208  file /proc/acpi/event 
+ 1209  ps auxww | grep acpid
+ 1210  dpkg --list | grep plymouth
+ 1211  ls /usr/share/plymouth/themes
+ 1212  man update-initramfs
+ 1213  ls /boot
+ 1214  mount
+ 1215  ps axjf
+ 1216  man ps
+ 1217  systemd-analyze blame
+ 1218  vi /lib/systemd/system/apt-daily.service
+ 1219  vi /lib/systemd/system/apt-daily-upgrade.service
+ 1220  systemctl status apt-daily
+ 1221  systemctl status apt-daily-upgrade
+ 1222  systemctl disable apt-daily-upgrade
+ 1223  systemctl disable apt-daily
+ 1224  exi
+ 1225  exit
+ 1226  systemd-analyze blame
+ 1227  history
+ 1228  systemctl enable apt-daily
+ 1229  systemctl enable apt-daily-upgrade
+ 1230  apt-cache search netcat
+ 1231  man netrw
+ 1232  ps -ajxf
+ 1233  man colord
+ 1234  ls
+ 1235  pwd
+ 1236  ls
+ 1237  uptime
+ 1238  dpkg --list | grep theme
+ 1239  cat /etc/default/grub
+ 1240  cat /etc/fstsab
+ 1241  cat /etc/fstab
+ 1242  ls /usr/share/plymouth/
+ 1243  ls /usr/share/plymouth/themes
+ 1244  update-initramfs -u
+ 1245  exit
+ 1246  ls /boot
+ 1247  ls -lrt /boot
+ 1248  man update-initramfs
+ 1249  man update-alternatives
+ 1250  pwd
+ 1251  ls /usr/share/plymouth/
+ 1252  ls /usr/share/plymouth/themes
+ 1253  cat /usr/share/plymouth/themes/default.plymouth 
+ 1254  vi /etc/alternatives/default.plymouth 
+ 1255  ps auxww | grep plymouth
+ 1256  which plymouth
+ 1257  ps auxww | grep plymouthd
+ 1258  which plymouthd
+ 1259  ls /usr/share/initramfs-tools/scripts/init-top/
+ 1260  vi /var/log/boot.log 
+ 1261  file /scripts/init-premount/dropbear
+ 1262  ls /script/init-premount
+ 1263  vi /var/log/boot.log 
+ 1264  ls /usr/share/initramfs-tools
+ 1265  ls /usr/share/initramfs-tools/scripts
+ 1266  ls /usr/share/initramfs-tools/scripts/init-premount
+ 1267  vi /usr/share/initramfs-tools/scripts/init-premount/dropbear 
+ 1268  ls /lib/systemd/system
+ 1269  ls /lib/systemd/system/drop*
+ 1270  which ipconfig
+ 1271  apt-cache search ipconfig
+ 1272  vi /var/log/boot.log 
+ 1273  history
+ 1274  vi /usr/share/initramfs-tools/scripts/init-premount/dropbear 
+ 1275  vi /var/log/boot.log
+ 1276  ls /var/tmp
+ 1277  vi /var/log/boot.log
+ 1278  cd /usr/share/initramfs-tools/scripts/init-premount/
+ 1279  ls -lrt
+ 1280  vi plymouth 
+ 1281  cat /proc/cmdline 
+ 1282  ls /etc/initramfs-tools/
+ 1283  ls -l /etc/initramfs-tools/
+ 1284  ls -l /usr/share/initramfs-tools/
+ 1285  ls -l /etc/initramfs-tools/
+ 1286  lsinitramfs /boot/initrd.img-5.0.0-23-generic 
+ 1287  ps auxww | grep dropbear
+ 1288  ps axjf
+ 1289  ps axjf | less
+ 1290  vi /etc/inittab
+ 1291  grep dropbear /lib/systemd/system/*
+ 1292  dpkg --list | grep dropbear
+ 1293  man dpkg-query
+ 1294  dpkg-query -L dropbear
+ 1295  dpkg-query -L dropbear-bin
+ 1296  dpkg-query -L dropbear-initramfs
+ 1297  cat /usr/share/initramfs-tools/conf-hooks.d/dropbear
+ 1298  cat /usr/share/initramfs-tools/hooks/dropbear
+ 1299  vi /var/log/boot.log
+ 1300  dpkg-query -L dropbear-initramfs
+ 1301  dpkg --list | grep dropbear
+ 1302  dpkg-query -L dropbear-run
+ 1303  ls /etc/init.d/dropbear
+ 1304  vi /etc/init.d/dropbear
+ 1305  man busybox
+ 1306  ls /bin/ls
+ 1307  ls -l /bin/ls
+ 1308  file /bin/ls
+ 1309  file /bin/mv
+ 1310  ls -l /bin/mv
+ 1311  which busybox
+ 1312  man busybox
+ 1313  busybox
+ 1314  man busybox
+ 1315  dpkg-query -L busybox
+ 1316  ls -l /bin/ls
+ 1317  ls -l /bin/rm
+ 1318  which vi
+ 1319  ls -l /usr/bin/vi
+ 1320  cd /boot
+ 1321  ls
+ 1322  file initrd.img-5.0.0-23-generic
+ 1323  dpkg --list | grep drop
+ 1324  vi /var/log/boot.log
+ 1325  dpkg --purge dropbear-initramfs
+ 1326  vi /var/log/boot.log
+ 1327  systemctl status systemd-modules-load.service
+ 1328  vi /var/log/boot.log
+ 1329  exit
+ 1330  find / -name init-premount
+ 1331  cd /etc/initramfs-tools/scripts/init-premount
+ 1332  ls
+ 1333  cd /usr/share/initramfs-tools/scripts/init-premount
+ 1334  ls
+ 1335  vi dropbear
+ 1336  cd ..
+ 1337  ls
+ 1338  find . -name dropbear
+ 1339  vi init-bottom/dropbear 
+ 1340  vi init-premount/dropbear 
+ 1341  pwd
+ 1342  cd /mnt/root-ro
+ 1343  cd /
+ 1344  ls
+ 1345  ls /etc/fstab*
+ 1346  cp /etc/fstab.ro /etc/fstab
+ 1347  rm disable-root-ro
+ 1348  exit
+ 1349  mount
+ 1350  cat /etc/fstab
+ 1351  vi /var/log/boot.log
+ 1352  less /var/log/boot.log
+ 1353  more /var/log/boot.log
+ 1354  ls /lib/systemd/system
+ 1355  ls -lrt /lib/systemd/system
+ 1356  tail -f /var/log/boot.log
+ 1357  cd /home/smb
+ 1358  ls
+ 1359  cat start-application.sh 
+ 1360  systemctl xserver status
+ 1361  systemctl status xserver
+ 1362  systemctl start xserver
+ 1363  Xorg
+ 1364  mount
+ 1365  cd /tmp
+ 1366  ls
+ 1367  touch xx
+ 1368  mount -o remount,rw /mnt/root-ro
+ 1369  cd /mnt
+ 1370  ls
+ 1371  mount
+ 1372  mount -o remount,rw /
+ 1373  mount
+ 1374  cd /
+ 1375  ls
+ 1376  cd /etc
+ 1377  ls
+ 1378  vi fstab
+ 1379  cd /
+ 1380  ls
+ 1381  rm disable-root-ro
+ 1382  vi /etc/fstab
+ 1383  vi fstab.rw
+ 1384  vi /etc/fstab.rw
+ 1385  exit
+ 1386  cd /home/smb
+ 1387  ls
+ 1388  ls initramfs-tools/
+ 1389  exit
+ 1390  mount
+ 1391  vi /var/log/boot.log
+ 1392  cd /usr/share/initramfs-tools/
+ 1393  ls
+ 1394  cd scripts
+ 1395  ls
+ 1396  cd init-bottom/
+ 1397  ls
+ 1398  rm dropbear
+ 1399  cd ..
+ 1400  cd init-premount/
+ 1401  ls
+ 1402  rm dropbear 
+ 1403  update-initramfs -u
+ 1404  cd /
+ 1405  ls
+ 1406  (exit ; reboot)
+ 1407  exit
+ 1408  reboot && exit
+ 1409  vi /var/log/boot.log 
+ 1410  pwd
+ 1411  cd /usr/share/
+ 1412  ls
+ 1413  cd initramfs-tools/
+ 1414  ls
+ 1415  cd scripts/
+ 1416  ls
+ 1417  ls init-premount/
+ 1418  vi /var/log/boot.log
+ 1419  rm /var/log/boot.log
+ 1420  (sleep 5 ; reboot)
+ 1421  (sleep 5 ; reboot) & 
+ 1422  exit
+ 1423  vi /var/log/boot.log 
+ 1424  mount
+ 1425  cd /
+ 1426  ls
+ 1427  ls /mnt/root-ro
+ 1428  cd /
+ 1429  ls
+ 1430  rm disable-root-ro
+ 1431  cd /etc
+ 1432  ls -lrt etc*
+ 1433  ls -lrt fstab*
+ 1434  diff fstab fstab.rw
+ 1435  cp fstab.ro fstab
+ 1436  (sleep 5 ; reboot) &
+ 1437  exit
+ 1438  mount
+ 1439  cd /home/smb
+ 1440  ls
+ 1441  cp go-rw.sh go-ro.sh
+ 1442  vi go-ro.sh
+ 1443  ls -lrt
+ 1444  ls /
+ 1445  ps auxww | grep eGTouchD
+ 1446  vi /var/log/boot.log
+ 1447  ls -lrt /lib/systemd/system
+ 1448  systemctl status egtouch
+ 1449  touch /tmp/xxx
+ 1450  rm /tmp/xxx
+ 1451  systemctl egtouch stop
+ 1452  systemctl stop egtouch
+ 1453  systemctl start egtouch
+ 1454  DISPLAY=:0.0
+ 1455  export DISPLAY
+ 1456  xeyes
+ 1457  vi /var/log/boot.log
+ 1458  more /var/log/boot.log
+ 1459  systemctl stop xserver
+ 1460  systemctl start xserver
+ 1461  vi /var/log/boot.log
+ 1462  systemctl stop egtouch
+ 1463  ps auxww | grep eGTouch
+ 1464  which eGTouchD
+ 1465  /usr/bin/eGTouchD -f
+ 1466  ps auxww | grep eGTouch
+ 1467  exit
+ 1468  vi /var/log/boot.log
+ 1469  more /var/log/boot.log
+ 1470  cd /home/smb
+ 1471  ls /
+ 1472  ls
+ 1473  cat go-ro.sh 
+ 1474  ./go-ro.sh 
+ 1475  diff /etc/fstab /etc/fstab.ro
+ 1476  ls /
+ 1477  exit
+ 1478  ls
+ 1479  cd /home/smb
+ 1480  ls
+ 1481  exit
+ 1482  mount
+ 1483  cd /
+ 1484  ls
+ 1485  cd /lib/firmware/
+ 1486  ls
+ 1487  scp -r /home/smb/i985/ .
+ 1488  ls
+ 1489  update-initramfs -u
+ 1490  ls -l
+ 1491  mv i985 i915
+ 1492  ls -l
+ 1493  update-initramfs -u
+ 1494  (sleep 4 ; reboot) &
+ 1495  exit
+ 1496  vi /var/log/boot.log 
+ 1497  more /var/log/boot.log
+ 1498  find / -name dropbear
+ 1499  vi /usr/share/initramfs-tools/conf-hooks.d/dropbear
+ 1500  vi /usr/share/initramfs-tools/hooks/dropbear
+ 1501  find / -name plymouth 
+ 1502  update-alternatives --config default.plymouth
+ 1503  man update-alternatives
+ 1504  ls /etc/alternatives
+ 1505  ls /etc/alternatives/text.plymouth 
+ 1506  ls -l /etc/alternatives/text.plymouth
+ 1507  cat /usr/share/plymouth/themes/ubuntu-text/ubuntu-text.plymouth
+ 1508  lsusb
+ 1509  lpinfo -v
+ 1510  man cups-deviced
+ 1511  lpinfo -m
+ 1512  vi /var/log/boot.log
+ 1513  man lpinfo
+ 1514  lpinfo
+ 1515  lpinfo -v
+ 1516  dmesg
+ 1517  lsusb
+ 1518  lpq
+ 1519  lp
+ 1520  lpstat
+ 1521  ps auxww | grep cups
+ 1522  netstat -a -t -l 
+ 1523  netstat -a -t -l -n
+ 1524  netcat localhost:631
+ 1525  telnet
+ 1526  wget localhost:631
+ 1527  cat index.html 
+ 1528  man ssh
+ 1529  ssh hellem03@10.0.20.22
+ 1530  man lpadmin
+ 1531  man lpinfo
+ 1532  lpinfo -v
+ 1533  ssh -R 127.0.0.1:8631:127.0.0.1:631 10.0.20.22
+ 1534  ssh -R 127.0.0.1:8631:127.0.0.1:631 hellem03@10.0.20.22
+ 1535  lpinfo -v
+ 1536  which cups-deviced
+ 1537  apt-cache search cups-deviced
+ 1538  map lpadmin
+ 1539  man lpadmin
+ 1540  man lpinfo
+ 1541  lpinfo -v
+ 1542  cd /etc/cups
+ 1543  cd ppd
+ 1544  ls
+ 1545  ls -l
+ 1546  pwd
+ 1547  cd ..
+ 1548  ls
+ 1549  cat printers.conf
+ 1550  vi printers.conf 
+ 1551  ls
+ 1552  cd ppd
+ 1553  s
+ 1554  ls
+ 1555  cd ls -lrt
+ 1556  ls -lrt
+ 1557  lpinfo
+ 1558  lpinfo -v
+ 1559  vi /etc/cups/cupsd.conf 
+ 1560  ifconfig
+ 1561  vi /etc/cups/cupsd.conf 
+ 1562  systemctl status cupsd
+ 1563  systemctl status cpus
+ 1564  systemctl status cups
+ 1565  systemctl stop cups
+ 1566  systemctl start cups
+ 1567  systemctl status cups
+ 1568  ifconfig
+ 1569  man lpadmin
+ 1570  which lpd
+ 1571  which lp
+ 1572  man lp
+ 1573  lpinfo
+ 1574  lpinfo -v
+ 1575  exit
+ 1576  ls
+ 1577  cd /home/smb
+ 1578  ls
+ 1579  ls rootfs
+ 1580  ls rootfs/etc
+ 1581  ls rootfs/etc/cups
+ 1582  ls -l rootfs/
+ 1583  ls -l rootfs/etc/
+ 1584  ls -l rootfs/etc/cups
+ 1585  ls /etc/cups
+ 1586  cd /etc/cups
+ 1587  ls
+ 1588  vi printers.conf 
+ 1589  ps auxww | grep cupsd
+ 1590  exit
+ 1591  dpkg --list | grep cups
+ 1592  ipinfo -v
+ 1593  lpinfo -v
+ 1594  dpkg -S cups-deviced
+ 1595  ls /usr/lib/cups
+ 1596  ls /usr/lib/cups/daemon
+ 1597  dpkg -S lpadmin
+ 1598  dpkg -L cups
+ 1599  dpkg --list | grep cups
+ 1600  apt-get install cups
+ 1601  dpkg --list cups
+ 1602  dpkg -L cups
+ 1603  lpinfo -v
+ 1604  lpinfo -m
+ 1605  lpinfo -m | grep -i officejet
+ 1606  lsusb
+ 1607  lpstat
+ 1608  lpq
+ 1609  dpkg -S lpq
+ 1610  dpkg -L cups-server-common
+ 1611  dpkg -S lpq
+ 1612  which cancel
+ 1613  which lp
+ 1614  which lpq
+ 1615  which lpstat
+ 1616  dpkg -L cups-client | less
+ 1617  cd /home/smb
+ 1618  ls
+ 1619  cd rootfs
+ 1620  ls
+ 1621  cd etc
+ 1622  ls
+ 1623  cd cups
+ 1624  ls
+ 1625  cd ppd
+ 1626  ls
+ 1627  ls -lrt
+ 1628  lpinfo -v
+ 1629  ls -lrt
+ 1630  apt-get install cups-bsd
+ 1631  lpq
+ 1632  ls -l
+ 1633  cat Brother_QL_820NWB.ppd
+ 1634  less Brother_QL_820NWB.ppd
+ 1635  ls -l
+ 1636  less HP6100.ppd
+ 1637  ls
+ 1638  pwd
+ 1639  cat index.html 
+ 1640  pwd
+ 1641  ls
+ 1642  pwd
+ 1643  cd /home/smb
+ 1644  ls
+ 1645  ls -l Appnew
+ 1646  ls -l Code/Application 
+ 1647  ps auxww | grep Appnew 
+ 1648  ps auxww | grep Application
+ 1649  exit
+ 1650  systemctl status application
+ 1651  ls -lrt /lib/systemd/system
+ 1652  systemctl kiosk-application.service
+ 1653  systemctl kiosk-application.service status
+ 1654  systemctl kiosk-application status
+ 1655  systemctl status kiosk-application.service
+ 1656  systemctl stop kiosk-application.service
+ 1657  pwd
+ 1658  cd /home/smb
+ 1659  ls
+ 1660  cat start-application.sh 
+ 1661  export LD_LIBRARY_PATH=/home/smb/lib
+ 1662  export DISPLAY=:0.0
+ 1663  ls
+ 1664  ./Appnew
+ 1665  dpkg --list | grep gtk
+ 1666  echo $LD_LIBRARY_PATH
+ 1667  ls /home/smb/lib
+ 1668  ldd Appnew
+ 1669  ls
+ 1670  ldd Appnew
+ 1671  env
+ 1672  ls
+ 1673  ./Appnew 
+ 1674  (sleep 5 ; shutdown now) &
+ 1675  exit
+ 1676  ls -la
+ 1677  cd /home/smb
+ 1678  ls
+ 1679  ls -lrt
+ 1680  service kiosk-application status
+ 1681  service kiosk-application stop
+ 1682  cat start-application.sh 
+ 1683  export LD_LIBRARY_PATH=/home/smb/lib
+ 1684  export DISPLAY=:0.0
+ 1685  ./Appnew
+ 1686  (sleep 5; shutdown now) &
+ 1687  exit
+ 1688  ps auxww | grep Appnew
+ 1689  (sleep 5 ; shutdown now) &
+ 1690  exit
+ 1691  ls
+ 1692  tree
+ 1693  apt-cache search tree
+ 1694  apt install tree
+ 1695  ls
+ 1696  tree /etc
+ 1697  tree /etc | less
+ 1698  tree /etc/ | less
+ 1699  tree /etc/ | grep eGTouch
+ 1700  tree /usr | grep eGTouch
+ 1701  tree /lib/systemd/system
+ 1702  ls -lrt /lib/systemd/system
+ 1703  cd /home/smb
+ 1704  ls
+ 1705  ls /etc/X11
+ 1706  find /etc -name plymouth
+ 1707  find / -name plymouth
+ 1708  find / -name dropbear
+ 1709  man initramfs-update
+ 1710  man update-initramfs
+ 1711  (sleep 5 ; shutdown now) &
+ 1712  exit
+ 1713  dpkg --list | grep dropbear
+ 1714  (sleep 5 ; shutdown now) &
+ 1715  exit
+ 1716  lpinfo -v
+ 1717  (sleep 5 ; shutdown now) &
+ 1718  exit
+ 1719  lpstat -v
+ 1720  lpinfo --include-schemes usb -v
+ 1721  ls
+ 1722  cat index.html 
+ 1723  ls
+ 1724  vi xorg.conf.new
+ 1725  ls
+ 1726  echo "this is a test" | lp
+ 1727  ls
+ 1728  service kiosk-application stop
+ 1729  service kiosk-application start
+ 1730  lpinfo -v
+ 1731  cd /home/smb
+ 1732  ls
+ 1733  service kiosk-application.service sstop
+ 1734  service kiosk-application stop
+ 1735  which strings
+ 1736  ./Appnew &
+ 1737  cat start-application.sh 
+ 1738  export LD_LIBRARY_PATH=/home/smb/lib
+ 1739  export DISPLAY=:0.0
+ 1740  ./Appnew &
+ 1741  (sleep 5 ; shutdown now ) &
+ 1742  exit
+ 1743  cd /home/smb
+ 1744  ls
+ 1745  ls -lrt
+ 1746  file application.1578931270124395484.log
+ 1747  rm application.1578931270124395484.log application.1578996682107933367.log application.1579000466917437045.log application.1579189354243802691.log
+ 1748  ls -lrt
+ 1749  service kiosk-application stop
+ 1750  ls /tmp
+ 1751  ls /var/tmp
+ 1752  ls
+ 1753  exit
+ 1754  pwd
+ 1755  cd /home/smb/Code
+ 1756  cd ..
+ 1757  ls -ld Code
+ 1758  ls
+ 1759  cd Code
+ 1760  ls
+ 1761  cat lpinfo_v.txt
+ 1762  cat lpstat_v.txt 
+ 1763  ls -lrt
+ 1764  rm lpstat_v.txt lpinfo_v.txt
+ 1765  cat history.smb 
+ 1766  rm history.smb 
+ 1767  cat ChnDictData/
+ 1768  cd ChnDictData/
+ 1769  ls
+ 1770  cd ..
+ 1771  ls
+ 1772  cd data
+ 1773  ls
+ 1774  cd ..
+ 1775  cd data
+ 1776  ls
+ 1777  cat 'QV0000 14012020 1033.txt'
+ 1778  cd ..
+ 1779  ls
+ 1780  pwd
+ 1781  cd ..
+ 1782  ls
+ 1783  ls -la
+ 1784  cd Code
+ 1785  ls
+ 1786  ls -la
+ 1787  mkdir save
+ 1788  mv data save
+ 1789  mv ChnDictData/ save
+ 1790  cat CalibLog.smb 
+ 1791  mv CalibLog.smb save
+ 1792  ls save
+ 1793  ls
+ 1794  ls -la
+ 1795  exit
+ 1796  cd /home/smb
+ 1797  ls
+ 1798  lpstat
+ 1799  lpq
+ 1800  ls
+ 1801  lpinfo -v
+ 1802  cd Code
+ 1803  ls
+ 1804  ls -la
+ 1805  cat lpinfo_v.txt
+ 1806  cat lpstat_v.txt
+ 1807  lpstat
+ 1808  man lpstat
+ 1809  lpstat -d
+ 1810  man lp
+ 1811  lpstat -v
+ 1812  man lp
+ 1813  lpinfo -v
+ 1814  lpstat -p
+ 1815  lpstat -p Officejet-Pro-8000-A809
+ 1816  ls
+ 1817  lp -p Officejet-Pro-8000-A809 lpinfo_v.txt
+ 1818  man lp
+ 1819  lp -d Officejet-Pro-8000-A809 lpinfo_v.txt
+ 1820  lpq
+ 1821  lpq -d Officejet-Pro-8000-A809-1
+ 1822  lpq -P Officejet-Pro-8000-A809-1
+ 1823  lp -d Officejet-Pro-8000-A809-1 lpinfo_v.txt
+ 1824  manlp
+ 1825  man lp
+ 1826  which lp
+ 1827  lp -d Officejet-Pro-8000-A809-1 lpinfo_v.txt
+ 1828  lp
+ 1829  man lp
+ 1830  ls
+ 1831  file lpinfo_v.txt
+ 1832  /usr/bin/lp -d Officejet-Pro-8000-A809-1 
+ 1833  ls -l /usr/bin/lp
+ 1834  /usr/bin/lp
+ 1835  /usr/bin/lp -d 'Officejet-Pro-8000-A809-1' lpinfo_v.txt
+ 1836  ls -la
+ 1837  cd ..
+ 1838  ls
+ 1839  lpinfo -v
+ 1840  history
+ 1841  lpq -P Officejet-Pro-8000-A809-1
+ 1842  lpstat -p Officejet-Pro-8000-A809
+ 1843  man lpq
+ 1844  lpq -P Officejet-Pro-8000-A809-1
+ 1845  exit
+ 1846  cd /home/smb
+ 1847  ls
+ 1848  exit
+ 1849  (sleep 5 ; shutdown now) & 
+ 1850  exit
+ 1851  mount
+ 1852  lsusb
+ 1853  mount
+ 1854  dpkg --listfiles usbmount
+ 1855  cat 
+ 1856  vi /etc/usbmount/usbmount.conf
+ 1857  mount
+ 1858  lsusb
+ 1859  mount
+ 1860  dmesg
+ 1861  mount
+ 1862  file /dev/sdb1
+ 1863  dmesg
+ 1864  fsck /dev/sdb1
+ 1865  man fsck
+ 1866  ls /media
+ 1867  file /media/usb0
+ 1868  ls /media/usb0
+ 1869  mount /dev/sdb1 /media/usb0
+ 1870  ls /media/usb0
+ 1871  fsck /media/usb0
+ 1872  umount /media/usb0
+ 1873  fsck /dev/sdb1
+ 1874  man e2fsck
+ 1875  mount
+ 1876  lsusb
+ 1877  dmesg
+ 1878  mount /dev/sdb1 /media/usb0
+ 1879  ls /media/usb0
+ 1880  umount /dev/sdb1
+ 1881  mount
+ 1882  dmesg
+ 1883  fsck /dev/sdb1
+ 1884  mount /dev/sdb1 /media/usb0
+ 1885  ls /media/usb0
+ 1886  fsck /media/usb0
+ 1887  umount /dev/sdb1
+ 1888  e2fsck -b 8193 /dev/sdb1
+ 1889  moun
+ 1890  mount
+ 1891  mount /dev/sdb1 /media/usb0
+ 1892  ls /media/usb0
+ 1893  fsck /media/usb0
+ 1894  e2fsck -b /dev/sdb1
+ 1895  e2fsck -b 8193 /dev/sdb1
+ 1896  umount /dev/sdb1
+ 1897  e2fsck -b 8193 /dev/sdb1
+ 1898  man fsck
+ 1899  file /dev/sdb1
+ 1900  mount
+ 1901  mount /dev/sdb1 /media/usb0
+ 1902  mount
+ 1903  dpkg --listfiles usbmount
+ 1904  vi /etc/usbmount/usbmount.conf
+ 1905  man usbmount
+ 1906  cat /lib/udev/rules.d/usbmount.rules
+ 1907  ls /lib/udev/rules.d
+ 1908  cat /lib/udev/rules.d/usbmount.rules 
+ 1909  dpkg --listfiles usbmount
+ 1910  ls /etc/usbmount/mount.d
+ 1911  cat /etc/usbmount/mount.d/00_create_model_symlink 
+ 1912  dmesg
+ 1913  ls /var/log
+ 1914  tail /var/log/boot.log
+ 1915  vi /var/log/boot.log 
+ 1916  more /var/log/boot.log
+ 1917  mount
+ 1918  cd /var/log
+ 1919  ls
+ 1920  tail dpkg.log
+ 1921  ls
+ 1922  cd cups
+ 1923  ls
+ 1924  tail error_log 
+ 1925  vi error_log 
+ 1926  ls
+ 1927  tail access_log 
+ 1928  cd ..
+ 1929  ls
+ 1930  tail lastlog
+ 1931  cd
+ 1932  mount
+ 1933  umount /dev/sdb1
+ 1934  mount
+ 1935  dmesg
+ 1936  mount
+ 1937  dpkg --list | grep usbmount
+ 1938  apt-get update
+ 1939  apt-cache search usbmount
+ 1940  apt-get install usbmount
+ 1941  dpkg --purge usbmount
+ 1942  apt-get install usbmount
+ 1943  dpkg --list | grep usbmount
+ 1944  dpkg --listfiles usbmount
+ 1945  vi /etc/usbmount/usbmount.conf
+ 1946  dmesg
+ 1947  mount
+ 1948  dmesg
+ 1949  lsusb
+ 1950  mount
+ 1951  vi /etc/usbmount/usbmount.conf
+ 1952  systemctl edit systemd-udevd
+ 1953  cat "etc/systemd/system/systemd-udevd.service.d/override.conf
+ 1954  cat /etc/systemd/system/systemd-udevd.service.d/override.conf
+ 1955  find / -name systemd-udevd.service
+ 1956  vi /lib/systemd/system/systemd-udevd.service
+ 1957  systemctl daemon-reload
+ 1958  service systemd-udevd --full-restart
+ 1959  mount
+ 1960  ls /media/usb0
+ 1961  ls /media/usb
+ 1962  find /etc -name usbmount.conf
+ 1963  vi /etc/usbmount/usbmount.conf
+ 1964  mount
+ 1965  umount /dev/sdb1
+ 1966  (sleep 5 ; shutdown now) &
+ 1967  exit
+ 1968  mount
+ 1969  ls -l /media/usb
+ 1970  cd /media/usb
+ 1971  ls -l
+ 1972  mount
+ 1973  ls -l /media/usb
+ 1974  ls /media/usb
+ 1975  history
+ 1976  vi /lib/systemd/system/systemd-udevd.service
+ 1977  vi /var/log/boot.log
+ 1978  exit
+ 1979  ps auxww | grep Appli
+ 1980  service kiosk-application stop
+ 1981  exit
+ 1982  pwd
+ 1983  ls
+ 1984  cd /home/smb
+ 1985  ls
+ 1986  cd /home/smb
+ 1987  service kiosk-application stop
+ 1988  which xinput-calibrate
+ 1989  which xinput-calibrator
+ 1990  whixh xinput_calibrator
+ 1991  which xinput_calibrator
+ 1992  vi /etc/syslog.conf
+ 1993  ls
+ 1994  cd Code
+ 1995  ls
+ 1996  ls Data
+ 1997  ls data
+ 1998  vi /var/log/boot.log
+ 1999  more /var/log/boot.log
+ 2000  exit
+ 2001  ls
+ 2002  cd /home/smb
+ 2003  ls
+ 2004  history
+ 2005  history | less
+ 2006  ls -lrt
+ 2007  history > root-history.txt
