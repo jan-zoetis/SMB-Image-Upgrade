@@ -46,6 +46,11 @@ This installation contains:
     eGTouchU
     eCalib   (calibration tool)
 
+To check: 
+
+The eGTouch "package" also installs a script under systemd, but it seems not to work.
+
+
 The current application uses "system" to execute xinput_calibrator. The resulting parameters are redirected
 to a text file and subsequently extracted and /home/smb/xorg.conf is re-generated accordingly.
 This code will need to be modified to work on both platforms.
