@@ -25,14 +25,14 @@ chroot mnt/root apt-get -y install iputils-ping
 chroot mnt/root apt-get -y install usbmount
 chroot mnt/root apt-get -y install acpid
 #chroot mnt/root apt-get -y install libc-bin
-chroot mnt/root apt-get -y install dialog
+#chroot mnt/root apt-get -y install dialog
 chroot mnt/root apt-get -y install vim-tiny
 chroot mnt/root apt-get -y install bash-completion
 chroot mnt/root apt-get -y install less
 chroot mnt/root apt-get -y install usbutils
-#chroot mnt/root apt-get -y install man
+chroot mnt/root apt-get -y install man
 chroot mnt/root apt-get -y install beep
-chroot mnt/root apt-get -y install mc
+#chroot mnt/root apt-get -y install mc
 chroot mnt/root apt-get clean
 chroot mnt/root apt-get -y install xserver-xorg-video-intel
 chroot mnt/root apt-get -y install x11-xserver-utils
@@ -48,10 +48,19 @@ chroot mnt/root apt-get clean
 chroot mnt/root apt-get -y install cups
 
 
+
 apply_local_changes
+
+# From here
 
 cp -a local.Abaxis/mnt/boot/background.tga mnt/boot/
 cp -a local.Abaxis/mnt/boot/middle.tga mnt/boot/
+
+chroot mnt/root systemctl enable xserver.service
+chroot mnt/root systemctl enable egtouch.service
+chroot mnt/root systemctl enable kiosk-application.service
+
+# To here is to be added to apply_local_changes
 
 chroot mnt/root apt-get -y install linux-image-5.0.0-23-generic
 create_boot_cfg $KERNEL_VERSION /dev/sda2 > mnt/root/boot/linux.cfg
