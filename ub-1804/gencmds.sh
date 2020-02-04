@@ -53,9 +53,6 @@ apply_local_changes
 
 # From here
 
-cp -a local.Abaxis/mnt/boot/background.tga mnt/boot/
-cp -a local.Abaxis/mnt/boot/middle.tga mnt/boot/
-
 chroot mnt/root systemctl enable xserver.service
 chroot mnt/root systemctl enable egtouch.service
 chroot mnt/root systemctl enable kiosk-application.service
@@ -65,6 +62,10 @@ chroot mnt/root systemctl enable kiosk-application.service
 chroot mnt/root apt-get -y install linux-image-5.0.0-23-generic
 create_boot_cfg $KERNEL_VERSION /dev/sda2 > mnt/root/boot/linux.cfg
 cp -a local.bootloader/*  mnt/root
+
+cp -a local.Abaxis/mnt/boot/background.tga mnt/boot/
+cp -a local.Abaxis/mnt/boot/middle.tga mnt/boot/
+
 mkdir -p mnt/boot/grub
 echo -e "(hd0) $DEV_WHOLE\n" > mnt/boot/grub/device.map
 
@@ -85,6 +86,8 @@ chroot mnt/root apt-get -y install dbus-x11
 chroot mnt/root rm -rf /var/log/journal
 
 grub-install --compress=gz --debug --grub-mkdevicemap=$PWD/mnt/boot/grub/device.map --boot-directory=$PWD/mnt/boot/ $DEV_WHOLE
+
+unmount_partitions
 
 echo "image generated"
 
