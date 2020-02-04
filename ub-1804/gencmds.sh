@@ -30,7 +30,7 @@ chroot mnt/root apt-get -y install vim-tiny
 chroot mnt/root apt-get -y install bash-completion
 chroot mnt/root apt-get -y install less
 chroot mnt/root apt-get -y install usbutils
-chroot mnt/root apt-get -y install man
+#chroot mnt/root apt-get -y install man
 chroot mnt/root apt-get -y install beep
 chroot mnt/root apt-get -y install mc
 chroot mnt/root apt-get clean
@@ -41,7 +41,7 @@ chroot mnt/root apt-get -y install x11-xserver-utils
 
 chroot mnt/root apt-get -y install xinit
 chroot mnt/root apt-get -y install xterm
-#chroot mnt/root apt-get -y install libgtk-3-0
+chroot mnt/root apt-get -y install libgtk-3-0
 chroot mnt/root apt-get -y install locales
 chroot mnt/root locale-gen en_US.UTF-8
 chroot mnt/root apt-get clean
@@ -49,6 +49,9 @@ chroot mnt/root apt-get -y install cups
 
 
 apply_local_changes
+
+cp -a local.Abaxis/mnt/boot/background.tga mnt/boot/
+cp -a local.Abaxis/mnt/boot/middle.tga mnt/boot/
 
 chroot mnt/root apt-get -y install linux-image-5.0.0-23-generic
 create_boot_cfg $KERNEL_VERSION /dev/sda2 > mnt/root/boot/linux.cfg
@@ -67,6 +70,10 @@ chroot mnt/root apt-get -y install libasound2
 
 chroot mnt/root apt-get -y install linux-modules-extra-5.0.0-23-generic
 chroot mnt/root apt-get -y install dbus-x11
+
+# Remove /var/log/journald to disable journald persistant logging
+
+chroot mnt/root rm -rf /var/log/journal
 
 grub-install --compress=gz --debug --grub-mkdevicemap=$PWD/mnt/boot/grub/device.map --boot-directory=$PWD/mnt/boot/ $DEV_WHOLE
 
