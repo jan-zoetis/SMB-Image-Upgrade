@@ -47,7 +47,9 @@ chroot mnt/root locale-gen en_US.UTF-8
 chroot mnt/root apt-get clean
 chroot mnt/root apt-get -y install cups
 
+# To get lpq 
 
+chroot mnt/root apt-get -y install cups-bsd
 
 apply_local_changes
 
